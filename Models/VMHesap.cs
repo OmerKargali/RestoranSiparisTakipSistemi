@@ -5,7 +5,7 @@ namespace RestoranSiparisTakipSistemi.Models
         public Kullanicilar? entity_Kullanicilar { get; set; }
     }
 
-    public class VMKayit
+    public class VMKayitOl
     {
         public int KullaniciId { get; set; }
         public string? Ad { get; set; }
