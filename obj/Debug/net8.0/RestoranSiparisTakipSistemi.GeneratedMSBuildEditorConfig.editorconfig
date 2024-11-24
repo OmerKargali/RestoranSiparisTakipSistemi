@@ -26,16 +26,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/omerkargali/RestoranSiparisTakipSistemi
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Home/Hakkinda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9IYWtraW5kYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Home/Iletisim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbGV0aXNpbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Home/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Shared/_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/omerkargali/RestoranSiparisTakipSistemi/Views/Shared/_ValidationScriptsPartial.cshtml]

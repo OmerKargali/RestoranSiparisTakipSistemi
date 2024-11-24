@@ -18,7 +18,17 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult Hakkinda()
+    {
+        return View();
+    }
+
+    public IActionResult Iletisim()
+    {
+        return View();
+    }
+
+    public IActionResult Menu()
     {
         return View();
     }
