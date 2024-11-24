@@ -1,8 +1,9 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global = global || self, global.GLightbox = factory());
-}(this, (function () { 'use strict';
+    typeof define === 'function' && define.amd ? define(factory) :
+      (global = global || self, global.GLightbox = factory());
+}(this, (function () {
+  'use strict';
 
   function _toPrimitive(t, r) {
     if ("object" != typeof t || !t) return t;
@@ -1535,7 +1536,7 @@
       this.pinchStartLen = null;
       this.zoom = 1;
       this.isDoubleTap = false;
-      var noop = function noop() {};
+      var noop = function noop() { };
       this.rotate = wrapFunc(this.element, option.rotate || noop);
       this.touchStart = wrapFunc(this.element, option.touchStart || noop);
       this.multipointStart = wrapFunc(this.element, option.multipointStart || noop);
@@ -3079,7 +3080,7 @@
       }
     }]);
   }();
-  function glightbox () {
+  function glightbox() {
     var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var instance = new GlightboxInit(options);
     instance.init();
