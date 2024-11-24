@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/omerkargali/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {}
   },
   "projects": {
-    "/Users/omerkargali/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/omerkargali/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
         "projectName": "RestoranSiparisTakipSistemi",
-        "projectPath": "/Users/omerkargali/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
-        "packagesPath": "/Users/omerkargali/.nuget/packages/",
-        "outputPath": "/Users/omerkargali/RestoranSiparisTakipSistemi/obj/",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/omerkargali/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -83,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
