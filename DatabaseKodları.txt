@@ -1,0 +1,43 @@
+CREATE DATABASE "RestoranSiparisTakipSistemi"
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LOCALE_PROVIDER = 'libc'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+ALTER TABLE IF EXISTS public."Urunler"
+    ADD CONSTRAINT "Urunler_Kategoriler_FK" FOREIGN KEY ("KategoriId")
+    REFERENCES public."Kategoriler" ("KategoriId") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE SET NULL
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_Urunler_Kategoriler_FK"
+    ON public."Urunler"("KategoriId");
+
+ALTER TABLE IF EXISTS public."Siparisler"
+    ADD CONSTRAINT "Siparisler_Kullanicilar_FK" FOREIGN KEY ("MusteriId")
+    REFERENCES public."Kullanicilar" ("KullaniciId") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE SET NULL
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_K"
+    ON public."Siparisler"("MusteriId");
+
+ALTER TABLE IF EXISTS public."SiparisDetaylari"
+    ADD CONSTRAINT "SiparisDetaylari_Siparislar_FK" FOREIGN KEY ("SiparisId")
+    REFERENCES public."Siparisler" ("SiparisId") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE SET NULL
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_SiparisDetaylari_Siparislar_FK"
+    ON public."SiparisDetaylari"("SiparisId");
+
+ALTER TABLE IF EXISTS public."SiparisDetaylari"
+    ADD CONSTRAINT "SiparisDetaylari_Urunler_FK" FOREIGN KEY ("UrunId")
+    REFERENCES public."Urunler" ("UrunId") MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE SET NULL
+    NOT VALID;
+CREATE INDEX IF NOT EXISTS "fki_SiparisDetaylari_Urunler_FK"
+    ON public."SiparisDetaylari"("UrunId");
