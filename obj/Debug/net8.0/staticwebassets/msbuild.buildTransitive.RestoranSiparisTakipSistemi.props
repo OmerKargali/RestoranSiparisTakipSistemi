@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../buildMultiTargeting/RestoranSiparisTakipSistemi.props" />
+  <Import Project="..\buildMultiTargeting\RestoranSiparisTakipSistemi.props" />
 </Project>
