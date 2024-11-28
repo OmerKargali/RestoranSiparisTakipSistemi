@@ -13,8 +13,13 @@
         <li><a href="/Home/Hakkinda" class="active">Hakkında</a></li>
         <li><a href="/Home/Menu" class="active">Menu</a></li>
         <li><a href="/Home/Iletisim" class="active">İletişim</a></li>
-        <li><a href="/Home/Sepet" class="active"><span><i style="font-size: 15px; margin-right: 5px;" class="fa-solid fa-cart-shopping"></i></span></a></li>
-
+        <li>  
+          <a href="/Home/Sepet" class="active" >
+          <span><i style="font-size: 14px; margin-left: -3px;" class="fa-solid fa-cart-shopping"></i></span>
+          <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
@@ -23,3 +28,4 @@
 
   </div>
 </header>
+

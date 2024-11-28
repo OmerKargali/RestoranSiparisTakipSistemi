@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9vqaXNWyDPXF3wBYTz64NAw5RX6OTGldFa0SHeWjuyM=",
+  "Hash": "O3y0Lk6T5l2dAUozvSH+AdQt+zflyfLpsilNipraMCs=",
   "Source": "RestoranSiparisTakipSistemi",
   "BasePath": "_content/RestoranSiparisTakipSistemi",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\main.css"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\css\\sepet.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\wwwroot\\",
+      "BasePath": "_content/RestoranSiparisTakipSistemi",
+      "RelativePath": "assets/css/sepet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\css\\sepet.css"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\about-2.jpg",
