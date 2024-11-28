@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestoranSiparisTakipSistemi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa77a3f6ded3b4ee9a4770250bd14626c87ace08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+253d39f272356aa8343c4c104a543db5f6d2f15a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestoranSiparisTakipSistemi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestoranSiparisTakipSistemi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
