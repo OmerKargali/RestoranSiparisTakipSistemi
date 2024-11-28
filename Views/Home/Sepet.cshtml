@@ -1,0 +1,109 @@
+<section id="cart" class="cart section">
+  <div class="container">
+    <h2>Alışveriş Sepeti</h2>
+    <div class="cart-items"></div> <!-- Ürünlerin geleceği alan -->
+    <div class="cart-summary">
+      <div class="total-price">
+        <p>Toplam: <span class="total-amount">$0.00</span></p>
+      </div>
+      <button class="complete-order-btn">Siparişi Tamamla</button>
+    </div>
+  </div>
+</section>
+
+<!-- Sepet Sayacı -->
+<div id="cart-count">0</div>
+
+<script>
+  // Sepet sayacını güncellemeyi sağlayan fonksiyon
+  const cartCountElement = document.getElementById('cart-count');
+
+  // localStorage'dan sepet öğelerini yükle
+  let savedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+  const cartItemsContainer = document.querySelector('.cart-items');
+  const totalAmountElement = document.querySelector('.total-amount');
+
+  // Sepet ürünlerini render eden fonksiyon
+  function renderCart() {
+    cartItemsContainer.innerHTML = ''; // Önce temizle
+    let totalAmount = 0;
+
+    savedCartItems.forEach(item => {
+      const cartItem = document.createElement('div');
+      cartItem.className = 'cart-item';
+      cartItem.dataset.id = item.id;
+
+      cartItem.innerHTML = `
+        <div class="cart-item-image">
+          <img src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="cart-item-details">
+          <h4>${item.name}</h4>
+          <p class="price">$${item.price.toFixed(2)}</p>
+          <div class="cart-item-quantity">
+            <button class="decrease-quantity-btn"">-</button>
+            <span class="quantity">${item.quantity}</span>
+            <button class="increase-quantity-btn">+</button>
+          </div>
+          <div class="cart-item-total">
+            <p class="total-price">$${(item.price * item.quantity).toFixed(2)}</p>
+          </div>
+        </div>
+        <div class="cart-item-buttons">
+          <button class="remove-item-btn">Sil</button>
+        </div>
+      `;
+
+      totalAmount += item.price * item.quantity;
+      cartItemsContainer.appendChild(cartItem);
+
+      // Silme butonuna tıklama işlemi
+      cartItem.querySelector('.remove-item-btn').addEventListener('click', () => {
+        removeItem(item.id); // Ürünü sil
+      });
+
+      // Miktar artırma ve azaltma butonlarına tıklama işlemi
+      cartItem.querySelector('.increase-quantity-btn').addEventListener('click', () => {
+        updateQuantity(item.id, item.quantity + 1); // Miktarı artır
+      });
+
+      cartItem.querySelector('.decrease-quantity-btn').addEventListener('click', () => {
+        if (item.quantity > 1) {
+          updateQuantity(item.id, item.quantity - 1); // Miktarı azalt
+        }
+      });
+    });
+
+    totalAmountElement.textContent = `$${totalAmount.toFixed(2)}`;
+    updateCartCount();  // Sepet sayısını güncelle
+  }
+
+  // Sepet sayısını güncelle
+  function updateCartCount() {
+    const totalCount = savedCartItems.reduce((acc, item) => acc + item.quantity, 0);
+    cartCountElement.textContent = totalCount; // Sepet sayısını güncelle
+  }
+
+  // Ürünü sepetten sil
+  function removeItem(productId) {
+    savedCartItems = savedCartItems.filter(item => item.id !== productId);
+    localStorage.setItem('cartItems', JSON.stringify(savedCartItems));
+    location.reload(); // Sayfayı yenileyerek değişikliklerin uygulanmasını sağla
+  }
+
+  // Miktarı güncelle
+  function updateQuantity(productId, newQuantity) {
+    const item = savedCartItems.find(item => item.id === productId);
+    if (item) {
+      item.quantity = newQuantity;
+    }
+
+    // LocalStorage'ı güncelle
+    localStorage.setItem('cartItems', JSON.stringify(savedCartItems));
+
+    location.reload(); // Sayfayı yenileyerek değişikliklerin uygulanmasını sağla
+  }
+
+  // Sayfa yüklendiğinde sepeti render et
+  renderCart();
+</script>
