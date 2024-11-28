@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,15 @@ builder.Services.AddDbContext<AppDBContext>(opts =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddAuthentication(
+    CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(option =>
+    {
+        option.LoginPath = "/Hesap/Giris";
+        option.AccessDeniedPath = "/Hesap/Giris";
+        option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

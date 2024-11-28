@@ -116,7 +116,7 @@
         }
 
         button {
-            width: 100%;
+            width: 50%;
             height: 45px;
             background-color: white;
             border: none;
@@ -126,6 +126,12 @@
             font-weight: 700;
             border: 25px;
             border-radius: 5px;
+        }
+
+        .button-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .register {
@@ -150,10 +156,12 @@
 <body>
     <section>
         <div class="main-form">
-            <div class=" form-content">
+            <div class="form-content">
                 <form asp-controller="Hesap" asp-action="KayitOl" method="post">
+
                     <h2>Kayıt Ol</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 50px;">
 
                         <div class="input1" style="width: calc(33.33% - 8px);">
                             <input type="text" name="Ad" asp-for="Ad" required>
@@ -170,7 +178,7 @@
                             <label for="Telefon">Telefon Numarası</label>
                         </div>
 
-                        <!-- 2. Satır -->
+                        <!-- 2. Satıra Geçecek -->
                         <div class="input1" style="width: calc(33.33% - 8px);">
                             <input type="email" name="Eposta" asp-for="Eposta" required>
                             <label for="Eposta">E-Mail</label>
@@ -188,8 +196,7 @@
 
                     </div>
 
-                    <div>
-
+                    <div class="button-div">
                         <button href="/Hesap/Giris.cshtml">Kayıt Ol</button>
                     </div>
                     @if (ViewData["ValidateMessage"] != null)
