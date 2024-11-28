@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\RestoranSiparisTakipSistemi.props" />
+  <Import Project="../build/RestoranSiparisTakipSistemi.props" />
 </Project>
