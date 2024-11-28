@@ -2940,11 +2940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\enesy\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+      "projectUniqueName": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
       "projectName": "RestoranSiparisTakipSistemi",
-      "projectPath": "C:\\Users\\enesy\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+      "projectPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
       "packagesPath": "C:\\Users\\enesy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\enesy\\RestoranSiparisTakipSistemi\\obj\\",
+      "outputPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
