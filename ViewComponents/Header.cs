@@ -9,8 +9,11 @@ public class Header : ViewComponent
     {
         _context = context;
     }
+
     public async Task<IViewComponentResult> InvokeAsync()
     {
         return View();
     }
+
+
 }

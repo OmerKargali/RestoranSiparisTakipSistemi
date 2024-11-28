@@ -1,4 +1,8 @@
-public class Urunler{
+using System.ComponentModel.DataAnnotations;
+
+public class Urunler
+{
+    [Key]
     public int UrunId { get; set; }
     public int KategoriId { get; set; }
     public string? UrunAdi { get; set; }

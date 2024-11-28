@@ -1,4 +1,8 @@
-public class SiparisDetaylari {
+using System.ComponentModel.DataAnnotations;
+
+public class SiparisDetaylari
+{
+    [Key]
     public int SiparisDetaylariId { get; set; }
     public int SiparisId { get; set; }
     public int UrunId { get; set; }

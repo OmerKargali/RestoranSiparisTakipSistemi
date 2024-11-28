@@ -1,4 +1,8 @@
-public class Siparisler {
+using System.ComponentModel.DataAnnotations;
+
+public class Siparisler
+{
+    [Key]
     public int SiparisId { get; set; }
     public int MusteriId { get; set; }
     public DateTime Tarih { get; set; }

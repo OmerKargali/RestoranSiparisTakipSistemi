@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 <header id="header" class="header d-flex align-items-center sticky-top">
   <div class="container position-relative d-flex align-items-center justify-content-between">
 
@@ -13,13 +15,22 @@
         <li><a href="/Home/Hakkinda" class="active">Hakkında</a></li>
         <li><a href="/Home/Menu" class="active">Menü</a></li>
         <li><a href="/Home/Iletisim" class="active">İletişim</a></li>
-        <li><a href="/Home/Sepet" class="active"><span><i style="font-size: 15px; margin-right: 5px;" class="fa-solid fa-cart-shopping"></i></span></a></li>
+        <li>
+          <a href="/Home/Sepet" class="active">
+            <span><i style="font-size: 14px; margin-left: -3px;" class="fa-solid fa-cart-shopping"></i></span>
+            <span id="cart-count" class="cart-count">0</span>
+          </a>
+        </li>
+        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
+        <li><a class="" asp-controller="Home" asp-area="" asp-action="LogOut">Çıkış</a></li>
+        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
 
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
     <a class="btn-getstarted" href="/Hesap/Giris">Giriş Yap</a>
+
 
   </div>
 </header>

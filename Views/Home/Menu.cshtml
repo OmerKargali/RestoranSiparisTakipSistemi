@@ -1,6 +1,23 @@
 @{
   ViewData["Title"] = "Menu";
 }
+<style>
+.notification {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-size: 16px;
+}
+
+</style>
+
 <section id="menu" class="menu section">
 
   <!-- Section Title -->
@@ -43,6 +60,8 @@
 
     </ul>
 
+
+
     <div class="tab-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
 
       <div class="tab-pane fade active show" id="menu-starters">
@@ -54,7 +73,7 @@
 
         <div class="row gy-5">
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="1">
             <a href="/assets/img/menu/menu-item-1.png" class="glightbox"><img src="/assets/img/menu/menu-item-1.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Magnam Tiste</h4>
@@ -65,12 +84,12 @@
             <p class="price">
               $5.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
+           <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
           
           </div><!-- Menu Item -->
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="2">
             <a href="/assets/img/menu/menu-item-2.png" class="glightbox"><img src="/assets/img/menu/menu-item-2.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Aut Luia</h4>
@@ -81,12 +100,12 @@
             <p class="price">
               $14.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
+            <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
           
           </div><!-- Menu Item -->
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="3">
             <a href="/assets/img/menu/menu-item-3.png" class="glightbox"><img src="/assets/img/menu/menu-item-3.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Est Eligendi</h4>
@@ -97,12 +116,12 @@
             <p class="price">
               $8.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
+            <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
 
           </div><!-- Menu Item -->
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="4">
             <a href="/assets/img/menu/menu-item-4.png" class="glightbox"><img src="/assets/img/menu/menu-item-4.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Eos Luibusdam</h4>
@@ -113,13 +132,12 @@
             <p class="price">
               $12.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
-
+            <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
            
           </div><!-- Menu Item -->
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="5">
             <a href="/assets/img/menu/menu-item-5.png" class="glightbox"><img src="/assets/img/menu/menu-item-5.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Eos Luibusdam</h4>
@@ -130,13 +148,12 @@
             <p class="price">
               $12.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
-
+            <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
            
           </div><!-- Menu Item -->
 
-          <div class="col-lg-4 menu-item">
+          <div class="col-lg-4 menu-item" data-id="6">
             <a href="/assets/img/menu/menu-item-6.png" class="glightbox"><img src="/assets/img/menu/menu-item-6.png"
                 class="menu-img img-fluid" alt=""></a>
             <h4>Laboriosam Direva</h4>
@@ -147,7 +164,7 @@
             <p class="price">
               $9.95
             </p>
-            <a href="/Home/Sepet"><span  class="sepetIcon"><i class="fa-solid fa-cart-shopping sepetIcon"></i></span></a>
+            <button class="add-to-cart-btn">Sepete Ekle</button>
             </div>
 
           </div><!-- Menu Item -->
@@ -155,6 +172,7 @@
         </div>
       </div><!-- End Starter Menu Content -->
 
+<<<<<<< HEAD
       <div class="tab-pane fade" id="menu-breakfast">
 
         <div class="tab-header text-center">
@@ -406,6 +424,9 @@
 
         </div>
       </div><!-- End Dinner Menu Content -->
+=======
+      <!-- Add other tabs (Breakfast, Lunch, Dinner) here similarly with the same structure -->
+>>>>>>> edc4df01a7be8eb73a6fbd91765771d03002d711
 
       <div class="tab-pane fade active show" id="menu-starters">
 
@@ -522,3 +543,16 @@
   </div>
 
 </section><!-- /Menu Section -->
+
+<script>
+  document.querySelector('.add-to-cart-btn').addEventListener('click', function() {
+  var notification = document.getElementById('notification');
+  notification.style.display = 'block';
+  
+  // 3 saniye sonra bildirimi gizle
+  setTimeout(function() {
+    notification.style.display = 'none';
+  }, 3000);
+});
+
+</script>
