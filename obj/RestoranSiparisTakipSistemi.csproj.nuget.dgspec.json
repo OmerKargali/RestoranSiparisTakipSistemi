@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {}
+    "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {
+    "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+        "projectUniqueName": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
         "projectName": "RestoranSiparisTakipSistemi",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\RestoranSiparisTakipSistemi\\obj\\",
+        "projectPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+        "packagesPath": "C:\\Users\\enesy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\enesy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
