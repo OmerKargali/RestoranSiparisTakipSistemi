@@ -17,6 +17,122 @@
       "PackagePath": "staticwebassets\\assets\\img\\Adsız tasarım.png"
     },
     {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KABURGA.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KABURGA.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KAHVALTI\\aperatif.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KAHVALTI\\aperatif.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KAHVALTI\\serpme.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KAHVALTI\\serpme.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KAHVALTI\\tabak.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KAHVALTI\\tabak.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\Adanakebap.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\Adanakebap.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\alinazik.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\alinazik.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\danafırındabeyti.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\danafırındabeyti.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\danalokum.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\danalokum.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\karışıkızgara.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\karışıkızgara.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\kasapköfte.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\kasapköfte.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzukülbastı.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzukülbastı.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzupirzola.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzupirzola.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzuşiş.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\kuzuşiş.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\KEBAP ÇEŞİTLERİ\\patlıcankebabı.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KEBAP ÇEŞİTLERİ\\patlıcankebabı.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\TATLILAR\\PEYNİRLİKAHİYE.png",
+      "PackagePath": "staticwebassets\\assets\\img\\TATLILAR\\PEYNİRLİKAHİYE.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\TATLILAR\\ZERDEIMTABAKKA.png",
+      "PackagePath": "staticwebassets\\assets\\img\\TATLILAR\\ZERDEIMTABAKKA.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\TATLILAR\\harire.png",
+      "PackagePath": "staticwebassets\\assets\\img\\TATLILAR\\harire.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\ALLUCETAVA.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\ALLUCETAVA.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\DAHUDİYAT.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\DAHUDİYAT.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\KURUDOLMA.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\KURUDOLMA.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\MUMBAR.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\MUMBAR.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\SACKAVURMA.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\SACKAVURMA.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\SOĞANDOLMASI.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\SOĞANDOLMASI.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\kaburgadolmasıı.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\kaburgadolmasıı.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\kuzuincik.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\kuzuincik.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\lahmacun.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\lahmacun.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\sembusekk.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\sembusekk.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\İKBEBET.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\İKBEBET.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\YÖRESEL YEMEKLER\\İROK.png",
+      "PackagePath": "staticwebassets\\assets\\img\\YÖRESEL YEMEKLER\\İROK.png"
+    },
+    {
       "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\about-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\about-2.jpg"
     },
@@ -25,12 +141,20 @@
       "PackagePath": "staticwebassets\\assets\\img\\about.jpg"
     },
     {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\ana kısım.png",
+      "PackagePath": "staticwebassets\\assets\\img\\ana kısım.png"
+    },
+    {
       "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\apple-touch-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\apple-touch-icon.png"
     },
     {
       "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\arkaplanresim.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\arkaplanresim.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\börek.png",
+      "PackagePath": "staticwebassets\\assets\\img\\börek.png"
     },
     {
       "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\chefs\\chefs-1.jpg",
@@ -101,28 +225,40 @@
       "PackagePath": "staticwebassets\\assets\\img\\hero-img.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-1.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-1.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\ayran.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\ayran.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-2.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-2.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\kahve.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\kahve.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-3.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-3.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\kola.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\kola.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-4.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-4.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\maden suyu.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\maden suyu.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-5.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-5.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\soğukçay.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\soğukçay.png"
     },
     {
-      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-6.png",
-      "PackagePath": "staticwebassets\\assets\\img\\menu\\menu-item-6.png"
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\su.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\su.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\yedigün.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\yedigün.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içecekler\\çay.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içecekler\\çay.png"
+    },
+    {
+      "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\içli köfte.png",
+      "PackagePath": "staticwebassets\\assets\\img\\içli köfte.png"
     },
     {
       "Id": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\reservation.jpg",
