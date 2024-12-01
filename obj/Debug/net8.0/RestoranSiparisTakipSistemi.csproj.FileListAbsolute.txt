@@ -270,8 +270,8 @@ C:\Users\ASUS\Desktop\RestoranSiparisTakipSistemi\obj\Debug\net8.0\refint\Restor
 C:\Users\ASUS\Desktop\RestoranSiparisTakipSistemi\obj\Debug\net8.0\RestoranSiparisTakipSistemi.pdb
 C:\Users\ASUS\Desktop\RestoranSiparisTakipSistemi\obj\Debug\net8.0\RestoranSiparisTakipSistemi.genruntimeconfig.cache
 C:\Users\ASUS\Desktop\RestoranSiparisTakipSistemi\obj\Debug\net8.0\ref\RestoranSiparisTakipSistemi.dll
-<<<<<<< HEAD
-=======
+>>>>>>> refs/remotes/origin/main
+>>>>>>> 7762b35bb58666493deed6d6405b63e2f4a5408a
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\bin\Debug\net8.0\appsettings.json
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\bin\Debug\net8.0\RestoranSiparisTakipSistemi.staticwebassets.runtime.json
@@ -407,5 +407,3 @@ C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\obj\Debug\net8.0\
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\obj\Debug\net8.0\RestoranSiparisTakipSistemi.pdb
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\obj\Debug\net8.0\RestoranSiparisTakipSistemi.genruntimeconfig.cache
 C:\Users\enesy\OneDrive\Masaüstü\RestoranSiparisTakipSistemi\obj\Debug\net8.0\ref\RestoranSiparisTakipSistemi.dll
->>>>>>> refs/remotes/origin/main
->>>>>>> 7762b35bb58666493deed6d6405b63e2f4a5408a

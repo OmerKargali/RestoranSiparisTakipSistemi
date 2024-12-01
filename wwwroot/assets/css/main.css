@@ -142,8 +142,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%,
-      color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -317,7 +319,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #776464;
   font-size: 14px;
   padding: 8px 26px;
   margin: 0;
@@ -372,12 +374,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu>ul>li {
+  .navmenu > ul > li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu>ul>li:last-child {
+  .navmenu > ul > li:last-child {
     padding-right: 0;
   }
 
@@ -404,7 +406,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu>ul>li>a:before {
+  .navmenu > ul > li > a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -417,13 +419,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover>a:before,
+  .navmenu li:hover > a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
@@ -462,11 +464,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -478,7 +480,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -580,7 +582,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -607,7 +609,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -617,28 +619,30 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   --heading-font: var(--default-font);
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #f7f7f7; /* Yazı rengi */
+  background-color: #776464; /* Arkaplan rengi */
   font-size: 14px;
   padding: 40px 0;
   position: relative;
 }
 
 .footer .icon {
-  color: var(--accent-color);
+  color: #f4a261; /* İkon rengi */
   margin-right: 15px;
   font-size: 24px;
   line-height: 0;
 }
 
 .footer h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .footer .address p {
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  line-height: 1.6;
 }
 
 .footer .social-links a {
@@ -648,30 +652,28 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  background-color: #ffffff;
+  color: #776464;
   margin-right: 10px;
-  transition: 0.3s;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #f4a261; /* Hover rengi */
 }
 
 .footer .copyright {
   padding-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.footer .copyright p {
-  margin-bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 13px;
 }
 
 .footer .credits {
   margin-top: 5px;
-  font-size: 13px;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------
@@ -792,11 +794,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -816,7 +818,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 56px;
@@ -853,7 +854,8 @@ section,
 }
 
 .section-title p .description-title {
-  color: var(--accent-color);
+  color: #000;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -1163,7 +1165,8 @@ section,
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 @media (max-width: 575px) {
@@ -1528,9 +1531,11 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb,
-      var(--background-color),
-      transparent 20%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 20%
+  );
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1616,64 +1621,47 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+/* Genel Düzenlemeler */
+/* Adres, Telefon, Çalışma Saatleri ile Form ve Harita Arasındaki Boşluk */
+.contact .row + .row {
+  margin-top: 40px; /* Aralarına 40px boşluk ekler */
+}
+
 .contact .info-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  height: 100%; /* Yükseklik eşitliği */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İkon hizalaması */
+  justify-content: center;
 }
 
 .contact .info-item .icon {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
+  color: white;
+  background-color: #776464;
   width: 56px;
   height: 56px;
   font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-in-out;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-bottom: 15px; /* İkon ile metin arası boşluk */
 }
 
-.contact .info-item h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-  font-family: var(--default-font);
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  line-height: 1;
-  margin: 4px 6px 0 0;
-  transition: 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-}
-
-.contact .info-item .social-links a:hover {
-  color: var(--accent-color);
+.contact .google-map,
+.contact .php-email-form {
+  height: 520px; /* Eşit yükseklik */
 }
 
 .contact .php-email-form {
   background-color: var(--surface-color);
+  padding: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-top: 30px;
-}
-
-@media (max-width: 575px) {
-  .contact .php-email-form {
-    padding: 20px;
-  }
 }
 
 .contact .php-email-form input[type="text"],
@@ -1683,34 +1671,27 @@ section,
   background-color: color-mix(in srgb, var(--surface-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
   font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-.contact .php-email-form input[type="text"]:focus,
-.contact .php-email-form input[type="email"]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type="text"]::placeholder,
-.contact .php-email-form input[type="email"]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  padding: 30px 15px;
 }
 
 .contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #776464;
   border: 0;
   padding: 10px 30px;
-  transition: 0.4s;
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type="submit"]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+/* Responsive Design */
+@media (max-width: 575px) {
+  .contact .info-item {
+    margin-bottom: 15px;
+  }
+
+  .contact .google-map,
+  .contact .php-email-form {
+    height: auto;
+  }
 }
 
 /*--------------------------------------------------------------

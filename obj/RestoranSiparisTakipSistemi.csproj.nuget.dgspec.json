@@ -1,19 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj": {}
-  },
-  "projects": {
-    "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
-        "projectName": "RestoranSiparisTakipSistemi",
-        "projectPath": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
-        "packagesPath": "/Users/omerkargali/.nuget/packages/",
-        "outputPath": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/",
-=======
     "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj": {}
   },
   "projects": {
@@ -25,26 +12,21 @@
         "projectPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
         "packagesPath": "C:\\Users\\enesy\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\",
->>>>>>> refs/remotes/origin/main
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "/Users/omerkargali/.nuget/NuGet/NuGet.Config"
-=======
           "C:\\Users\\enesy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> refs/remotes/origin/main
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-<<<<<<< HEAD
-=======
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
->>>>>>> refs/remotes/origin/main
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -108,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
