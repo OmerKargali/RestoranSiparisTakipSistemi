@@ -1,0 +1,160 @@
+/* Ürün öğelerini yatayda hizalamak */
+.cart-item {
+  display: flex;
+  justify-content: space-between; /* Yanyana yerleşim */
+  align-items: center; /* Ortalamak */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Görsel kısmının genişliği ve hizalanması */
+.cart-item-image {
+  flex: 0 0 100px; /* Görselin genişliğini sabitle */
+  margin-right: 15px; /* Görsel ile isim arasına boşluk ekle */
+}
+
+.cart-item-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Görselin düzgün kesilmesini sağlar */
+}
+
+/* Ürün detaylarını yatayda hizalamak */
+.cart-item-details {
+  display: flex;
+  justify-content: space-between; /* Öğeleri yatayda dağıt */
+  align-items: center;
+  flex: 1; /* Detayların tüm alanı kaplamasını sağlar */
+  gap: 15px; /* Öğeler arasına mesafe ekle */
+}
+
+/* Üst bilgilerin düzenlenmesi */
+.cart-item-details h4,
+.cart-item-details p {
+  margin: 0;
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+}
+
+/* Ürün başlığının genişliğini ayarla */
+.cart-item-details h4 {
+  flex: 2; /* Başlık öğesini daha geniş yap */
+  text-align: left;
+  margin-right: 15px; /* İsim ile diğer öğe arasına boşluk ekle */
+}
+
+/* Adet artırma/azaltma butonları */
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1; /* Alanı kaplamasını sağlar */
+}
+
+/* Fiyatın hizalanmasını sağla */
+.cart-item-details .price {
+  flex: 1; /* Fiyat kısmının genişliğini sabitler */
+  text-align: center; /* Fiyatı ortalar */
+}
+
+/* Silme butonu */
+.remove-item-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; /* Sil butonuna soldan boşluk ekle */
+}
+
+.remove-item-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Sipariş özeti kısmını düzenleme */
+.cart-summary {
+  display: flex;
+  justify-content: space-between; /* Toplam fiyatı sağa hizala */
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px; /* Ögeler arasına eşit mesafe ekle */
+}
+
+/* Toplam fiyat */
+.total-price p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 15px; /* Toplam fiyat ile sil butonu arasında boşluk */
+}
+
+/* Siparişi Tamamla butonunun kırmızı olması */
+.complete-order-btn {
+  background-color: #ff5722; /* Kırmızı renk */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.complete-order-btn:hover {
+  background-color: #e64a19; /* Hover efekti için daha koyu kırmızı */
+}
+
+/* Sepet ikonunun stili */
+.sepet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sepetIcon {
+  margin-bottom: 19px;
+  margin-left: 15px;
+  color: #000;
+  font-size: 20px;
+}
+/* Adet artırma/azaltma butonları */
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1; /* Alanı kaplamasını sağlar */
+}
+
+/* Artırma/Azaltma butonlarının görünümü */
+.cart-item-quantity button {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 6px; /* Butonların daha büyük ve görünür olmasını sağlar */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Geçiş efektleri */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px; /* Yazı boyutunu büyüt */
+}
+
+.cart-item-quantity button:hover {
+  background-color: #ddd;
+  transform: scale(1.1); /* Hover sırasında butonun büyümesini sağlar */
+}
+
+/* Butonların aktif (tıklanmış) görünümü */
+.cart-item-quantity button:active {
+  background-color: #ccc;
+  transform: scale(1); /* Tıklanmış butonun boyutunu sabitler */
+}
+
+/* Artırma/Azaltma butonlarının simgeleri */
+.cart-item-quantity button span {
+  font-weight: bold; /* Simgelerin kalın olmasını sağlar */
+  color: #333; /* Renk ayarı */
+}

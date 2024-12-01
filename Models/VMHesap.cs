@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace RestoranSiparisTakipSistemi.Models
 {
     public class VMHesap
@@ -12,8 +14,8 @@ namespace RestoranSiparisTakipSistemi.Models
         public string? Soyad { get; set; }
         public string? Eposta { get; set; }
         public string? Sifre { get; set; }
-        public string? Telefon { get; set; }
-        public string? Adres { get; set; }
+        public string? Telefon { get; set; } = "Belirtilmedi";
+        public string? Adres { get; set; } = "Belirtilmedi";
         public string? Rol { get; set; } = "Kullanici";
     }
 

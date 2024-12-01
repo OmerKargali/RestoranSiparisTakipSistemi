@@ -1,0 +1,265 @@
+@model VMKullanicilar
+@{
+    ViewData["Title"] = "Profil Sayfası";
+    Kullanicilar? entity_kullanicilar = null;
+    if (Model != null)
+    {
+        entity_kullanicilar = Model.entity_Kullanicilar;
+    }
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Profili</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e1;
+            color: #4b3832;
+        }
+
+        .profil-konteyner {
+            display: flex;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profil-yanpanel {
+            width: 30%;
+            background-color: #d9b48f;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .profil-resmi {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profil-yanpanel h2 {
+            margin: 10px 0;
+        }
+
+        .sosyal-ikonlar a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .profil-icerik {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .sekme {
+            display: flex;
+            border-bottom: 2px solid #d9b48f;
+            margin-bottom: 20px;
+        }
+
+        .sekme-dugme {
+            flex: 1;
+            padding: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            color: #4b3832;
+        }
+
+        .sekme-dugme.aktif {
+            border-bottom: 2px solid #d9b48f;
+            color: #d9b48f;
+        }
+
+        .sekme-icerik {
+            display: none;
+        }
+
+        .sekme-icerik.aktif {
+            display: block;
+        }
+
+        form label {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 5px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #d9b48f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #c49a7c;
+        }
+    </style>
+</head>
+
+@if (entity_kullanicilar != null)
+{
+
+    <body>
+    <div class="profil-konteyner">
+        <div class="profil-yanpanel">
+            <img src="@entity_kullanicilar.ProfilFotoUrl" class="profil-resmi">
+            <h2>@entity_kullanicilar.Ad
+                <span>@entity_kullanicilar.Soyad</span>
+            </h2>
+            <div class="sosyal-ikonlar">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="profil-icerik">
+            <div class="sekme">
+                <button class="sekme-dugme aktif" data-tab="genel-bakis">Genel Bakış</button>
+                <button class="sekme-dugme" data-tab="profil-duzenle">Profil Düzenle</button>
+                <button class="sekme-dugme" data-tab="sifre-degistir">Şifre Değiştir</button>
+            </div>
+            <div class="sekme-icerik aktif" id="genel-bakis">
+                <h3>Profil Detayları</h3>
+                <ul>
+                    <li><strong>Ad Soyad:</strong>@entity_kullanicilar.Ad
+                        <span>@entity_kullanicilar.Soyad</span>
+                    </li>
+                    <li><strong>Ülke:</strong>@entity_kullanicilar.Ulke</li>
+                    <li><strong>Adres:</strong>@entity_kullanicilar.Adres</li>
+                    <li><strong>Telefon:</strong>@entity_kullanicilar.Telefon</li>
+                    <li><strong>E-posta:</strong>@entity_kullanicilar.Eposta</li>
+                </ul>
+            </div>
+
+            <div class="sekme-icerik" id="profil-duzenle">
+                <h3>Profil Düzenle</h3>
+                @using (Html.BeginForm("BilgiGuncelle", "Home", FormMethod.Post))
+                    {
+                        <div class="Login-Form">
+                            <div class="Control-Group">
+                                @Html.HiddenFor(x => x.KullaniciId)
+                                <b>Ad</b>
+                                @Html.TextBoxFor(x => x.Ad, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Ad
+                                    })
+                                <br />
+                                <b>Soyad</b>
+                                @Html.TextBoxFor(x => x.Soyad, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Soyad
+                                    })
+                                <br />
+                                <b>E-posta</b>
+                                @Html.TextBoxFor(x => x.Eposta, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Eposta
+                                    })
+                                <br />
+                                <b>Telefon Numarası</b>
+                                @Html.TextBoxFor(x => x.Telefon, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Telefon
+                                    })
+                                <br />
+                                <b>Adres</b>
+                                @Html.TextBoxFor(x => x.Adres, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Adres
+                                    })
+                                <br />
+                                <b>Ulke</b>
+                                @Html.TextBoxFor(x => x.Ulke, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.Ulke
+                                    })
+                                <br />
+                                <b>Profil Fotoğrafı Url'i</b>
+                                @Html.TextBoxFor(x => x.ProfilFotoUrl, new
+                                    {
+                                        @class = "form-control",
+                                        value =
+                                         Model.ProfilFotoUrl
+                                    })
+                                <br />
+                            </div>
+                        </div>
+                        <button class="button"
+                            onclick="javascript:return confirm('Düzenlemeleriniz kaydedilecek, emin misiniz?')">Proje
+                            Düzenle</button>
+                    }
+                </div>
+
+
+
+                <div class="sekme-icerik" id="sifre-degistir">
+                    <h3>Şifre Değiştir</h3>
+                    <form method="post">
+                        <div class="form-group">
+
+                            <button type="submit" class="btn btn-primary">Şifreyi Değiştir</button>
+                    </form>
+
+                    <div>
+                        @if (TempData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success">
+                                @TempData["SuccessMessage"]
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+            document.querySelectorAll(".sekme-dugme").forEach((dugme) => {
+                dugme.addEventListener("click", () => {
+                    document.querySelectorAll(".sekme-dugme").forEach((btn) => btn.classList.remove("aktif"));
+                    document.querySelectorAll(".sekme-icerik").forEach((icerik) => icerik.classList.remove("aktif"));
+
+                    dugme.classList.add("aktif");
+                    document.getElementById(dugme.dataset.tab).classList.add("aktif");
+                });
+            });
+        </script>
+
+
+
+    </body>
+}

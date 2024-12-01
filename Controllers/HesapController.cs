@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using RestoranSiparisTakipSistemi.Models;
+using Microsoft.AspNetCore.Identity;
+using System.Text.RegularExpressions;
+using RestoranSiparisTakipSistemi.Models;
 
 public class HesapController : Controller
 {
@@ -28,19 +31,58 @@ public class HesapController : Controller
     }
 
     [HttpPost]
-    public IActionResult Giris(string Eposta, string Sifre)
+    public async Task<IActionResult> Giris(VMGiris modelGiris)
     {
+        string HataMesaji = "";
+        IConfigurationRoot configuration = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
 
-        var kullanici = _context.Kullanicilar.FirstOrDefault(u => u.Eposta == Eposta && u.Sifre == Sifre);
+        string? strBaglanti = configuration.GetConnectionString("WebApiDatabase");
+        var opt = new DbContextOptionsBuilder<AppDBContext>();
+        opt.UseNpgsql(strBaglanti);
+        _context = new AppDBContext(opt.Options);
 
-        if (kullanici != null)
+        if (!string.IsNullOrWhiteSpace(modelGiris.Eposta) && !string.IsNullOrWhiteSpace(modelGiris.Sifre))
         {
-            return RedirectToAction("Menu", "Home");
+            // Kullanıcıyı veritabanından kontrol et
+            Kullanicilar? kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Eposta == modelGiris.Eposta);
+
+            if (kullanici == null || kullanici.Sifre != modelGiris.Sifre)
+            {
+                HataMesaji = "Eposta veya Şifre Hatalı.";
+            }
+            else
+            {
+                // Kullanıcı için Claim oluştur
+                List<Claim> claims = new List<Claim>
+            {
+
+                new Claim(ClaimTypes.NameIdentifier, kullanici.Eposta), // Kullanıcı e-postasını NameIdentifier olarak ekle
+                new Claim(ClaimTypes.Name, kullanici.Ad),             // Kullanıcı adını Name olarak ekle
+                new Claim("KullaniciId", kullanici.KullaniciId.ToString()) // Kullanıcı ID'sini özel bir Claim olarak ekle
+            };
+
+                // Kimlik oluşturma ve oturum başlatma
+                var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var principal = new ClaimsPrincipal(identity);
+
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+
+                // Başarılı giriş sonrası yönlendirme
+                return RedirectToAction("Menu", "Home");
+            }
+        }
+        else
+        {
+            HataMesaji = "Eposta ve Şifrenizi giriniz.";
         }
 
+        ViewData["ValidateMessage"] = HataMesaji;
         return View();
-
     }
+
 
     public IActionResult KayitOl()
     {
@@ -50,6 +92,12 @@ public class HesapController : Controller
     [HttpPost]
     public async Task<IActionResult> KayitOl(VMKayitOl modelKayitOl)
     {
+        string HataMesaji = "";
+        IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile("appsettings.json").Build();
+        string? strBaglanti = configuration.GetConnectionString("WebApiDatabase");
+        var opt = new DbContextOptionsBuilder<AppDBContext>();
+        opt.UseNpgsql(strBaglanti);
+        _context = new AppDBContext(opt.Options);
         Kullanicilar dbkullanicilar = new Kullanicilar();
 
         if (modelKayitOl.Eposta != null && modelKayitOl.Ad != null)
@@ -67,21 +115,33 @@ public class HesapController : Controller
                 var mevcutKullanici = await _context.Kullanicilar.FirstOrDefaultAsync(u => u.Eposta == modelKayitOl.Eposta);
                 if (mevcutKullanici != null)
                 {
-                    ModelState.AddModelError("Eposta", "Bu Eposta zaten kayıtlı.");
-                    foreach (var modelState in ModelState.Values)
-                    {
-                        foreach (var error in modelState.Errors)
-                        {
-                            ModelState.AddModelError("", error.ErrorMessage);
-                        }
-                    }
+                    HataMesaji = "Bu Eposta zaten kayıtlı.";
+                    ViewData["ValidateMessage"] = HataMesaji;
                     return View(modelKayitOl);
                 }
+
+                if (!SifreKontrol(modelKayitOl.Sifre))
+                {
+                    HataMesaji = "Parola en az 8 karakter uzunluğunda olmalı ve bir büyük harf, bir küçük harf ile bir sayı içermelidir.";
+                    ViewData["ValidateMessage"] = HataMesaji;
+                    return View(modelKayitOl);
+                }
+
                 _context.Kullanicilar.Add(dbkullanicilar);
                 _context.SaveChanges();
                 return RedirectToAction("Menu", "Home");
             }
         }
+        HataMesaji = "Lütfen gerekli alanları doldurun.";
+        ViewData["ValidateMessage"] = HataMesaji;
         return View(modelKayitOl);
     }
+
+
+    private bool SifreKontrol(string sifre)
+    {
+        var sifrePattern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$";
+        return Regex.IsMatch(sifre, sifrePattern);
+    }
+
 }
