@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
   "Hash": "vagtDmwr4BBtPLsqT/CsXrsYJjMMUXaBuMVSTt1dJPU=",
+=======
+  "Hash": "/3N39CY7knm7jY6jOtrxwJy1ah79L/F29o4o2rLVn1I=",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
   "Source": "RestoranSiparisTakipSistemi",
   "BasePath": "_content/RestoranSiparisTakipSistemi",
   "Mode": "Default",
@@ -10,17 +14,28 @@
     {
       "Name": "RestoranSiparisTakipSistemi/wwwroot",
       "Source": "RestoranSiparisTakipSistemi",
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/Debug/net8.0/linux-arm64/scopedcss/bundle/RestoranSiparisTakipSistemi.styles.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Computed",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/Debug/net8.0/linux-arm64/scopedcss/bundle/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RestoranSiparisTakipSistemi.styles.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "RestoranSiparisTakipSistemi.styles.css",
       "AssetKind": "All",
@@ -33,6 +48,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "OriginalItemSpec": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/Debug/net8.0/linux-arm64/scopedcss/bundle/RestoranSiparisTakipSistemi.styles.css"
     },
     {
@@ -40,6 +56,15 @@
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Computed",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/Debug/net8.0/linux-arm64/scopedcss/projectbundle/",
+=======
+      "OriginalItemSpec": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\bundle\\RestoranSiparisTakipSistemi.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RestoranSiparisTakipSistemi.bundle.scp.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "RestoranSiparisTakipSistemi.bundle.scp.css",
       "AssetKind": "All",
@@ -52,6 +77,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "OriginalItemSpec": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/Debug/net8.0/linux-arm64/scopedcss/projectbundle/RestoranSiparisTakipSistemi.bundle.scp.css"
     },
     {
@@ -59,6 +85,15 @@
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "OriginalItemSpec": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RestoranSiparisTakipSistemi.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\css\\main.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/css/main.css",
       "AssetKind": "All",
@@ -74,10 +109,17 @@
       "OriginalItemSpec": "wwwroot/assets/css/main.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/css/sepet.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\css\\sepet.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/css/sepet.css",
       "AssetKind": "All",
@@ -93,10 +135,17 @@
       "OriginalItemSpec": "wwwroot/assets/css/sepet.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/about-2.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\about-2.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/about-2.jpg",
       "AssetKind": "All",
@@ -112,10 +161,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/about-2.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/about.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\about.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/about.jpg",
       "AssetKind": "All",
@@ -131,10 +187,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/about.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/Adsız tasarım.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\Adsız tasarım.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/Adsız tasarım.png",
       "AssetKind": "All",
@@ -147,6 +210,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "OriginalItemSpec": "wwwroot/assets/img/Adsız tasarım.png"
     },
     {
@@ -154,6 +218,15 @@
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "OriginalItemSpec": "wwwroot\\assets\\img\\Adsız tasarım.png"
+    },
+    {
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\apple-touch-icon.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/apple-touch-icon.png",
       "AssetKind": "All",
@@ -169,10 +242,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/apple-touch-icon.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/arkaplanresim.jpeg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\arkaplanresim.jpeg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/arkaplanresim.jpeg",
       "AssetKind": "All",
@@ -188,10 +268,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/arkaplanresim.jpeg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/chefs/chefs-1.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\chefs\\chefs-1.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/chefs/chefs-1.jpg",
       "AssetKind": "All",
@@ -207,10 +294,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/chefs/chefs-1.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/chefs/chefs-2.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\chefs\\chefs-2.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/chefs/chefs-2.jpg",
       "AssetKind": "All",
@@ -226,10 +320,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/chefs/chefs-2.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/chefs/chefs-3.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\chefs\\chefs-3.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/chefs/chefs-3.jpg",
       "AssetKind": "All",
@@ -245,10 +346,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/chefs/chefs-3.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/events-1.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\events-1.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/events-1.jpg",
       "AssetKind": "All",
@@ -264,10 +372,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/events-1.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/events-2.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\events-2.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/events-2.jpg",
       "AssetKind": "All",
@@ -283,10 +398,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/events-2.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/events-3.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\events-3.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/events-3.jpg",
       "AssetKind": "All",
@@ -302,10 +424,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/events-3.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/events-4.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\events-4.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/events-4.jpg",
       "AssetKind": "All",
@@ -321,10 +450,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/events-4.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/favicon.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\favicon.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/favicon.png",
       "AssetKind": "All",
@@ -340,10 +476,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/favicon.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-1.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-1.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-1.jpg",
       "AssetKind": "All",
@@ -359,10 +502,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-1.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-2.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-2.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-2.jpg",
       "AssetKind": "All",
@@ -378,10 +528,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-2.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-3.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-3.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-3.jpg",
       "AssetKind": "All",
@@ -397,10 +554,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-3.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-4.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-4.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-4.jpg",
       "AssetKind": "All",
@@ -416,10 +580,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-4.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-5.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-5.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-5.jpg",
       "AssetKind": "All",
@@ -435,10 +606,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-5.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-6.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-6.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-6.jpg",
       "AssetKind": "All",
@@ -454,10 +632,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-6.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-7.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-7.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-7.jpg",
       "AssetKind": "All",
@@ -473,10 +658,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-7.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/gallery/gallery-8.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\gallery\\gallery-8.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/gallery/gallery-8.jpg",
       "AssetKind": "All",
@@ -492,10 +684,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/gallery/gallery-8.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/hero-img.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\hero-img.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/hero-img.png",
       "AssetKind": "All",
@@ -511,10 +710,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/hero-img.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-1.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-1.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-1.png",
       "AssetKind": "All",
@@ -530,10 +736,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-1.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-2.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-2.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-2.png",
       "AssetKind": "All",
@@ -549,10 +762,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-2.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-3.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-3.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-3.png",
       "AssetKind": "All",
@@ -568,10 +788,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-3.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-4.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-4.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-4.png",
       "AssetKind": "All",
@@ -587,10 +814,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-4.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-5.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-5.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-5.png",
       "AssetKind": "All",
@@ -606,10 +840,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-5.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/menu/menu-item-6.png",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\menu\\menu-item-6.png",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/menu/menu-item-6.png",
       "AssetKind": "All",
@@ -625,10 +866,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/menu/menu-item-6.png"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/reservation.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\reservation.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/reservation.jpg",
       "AssetKind": "All",
@@ -644,10 +892,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/reservation.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/stats-bg.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\stats-bg.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/stats-bg.jpg",
       "AssetKind": "All",
@@ -663,10 +918,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/stats-bg.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/team-shape.svg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\team-shape.svg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/team-shape.svg",
       "AssetKind": "All",
@@ -682,10 +944,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/team-shape.svg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/testimonials/testimonials-1.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\testimonials\\testimonials-1.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/testimonials/testimonials-1.jpg",
       "AssetKind": "All",
@@ -701,10 +970,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/testimonials/testimonials-1.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/testimonials/testimonials-2.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\testimonials\\testimonials-2.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/testimonials/testimonials-2.jpg",
       "AssetKind": "All",
@@ -720,10 +996,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/testimonials/testimonials-2.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/testimonials/testimonials-3.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\testimonials\\testimonials-3.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/testimonials/testimonials-3.jpg",
       "AssetKind": "All",
@@ -739,10 +1022,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/testimonials/testimonials-3.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/img/testimonials/testimonials-4.jpg",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\img\\testimonials\\testimonials-4.jpg",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/img/testimonials/testimonials-4.jpg",
       "AssetKind": "All",
@@ -758,10 +1048,17 @@
       "OriginalItemSpec": "wwwroot/assets/img/testimonials/testimonials-4.jpg"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/js/main.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\js\\main.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/js/main.js",
       "AssetKind": "All",
@@ -777,10 +1074,17 @@
       "OriginalItemSpec": "wwwroot/assets/js/main.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/scss/Readme.txt",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\scss\\Readme.txt",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/scss/Readme.txt",
       "AssetKind": "All",
@@ -796,10 +1100,17 @@
       "OriginalItemSpec": "wwwroot/assets/scss/Readme.txt"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/aos/aos.cjs.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\aos\\aos.cjs.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/aos/aos.cjs.js",
       "AssetKind": "All",
@@ -815,10 +1126,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/aos/aos.cjs.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/aos/aos.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/aos/aos.css",
       "AssetKind": "All",
@@ -834,10 +1152,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/aos/aos.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/aos/aos.esm.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\aos\\aos.esm.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/aos/aos.esm.js",
       "AssetKind": "All",
@@ -853,10 +1178,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/aos/aos.esm.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/aos/aos.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/aos/aos.js",
       "AssetKind": "All",
@@ -872,10 +1204,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/aos/aos.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/aos/aos.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\aos\\aos.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/aos/aos.js.map",
       "AssetKind": "All",
@@ -891,10 +1230,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/aos/aos.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.css",
       "AssetKind": "All",
@@ -910,10 +1256,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.json",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.json",
       "AssetKind": "All",
@@ -929,10 +1282,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.json"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.min.css",
       "AssetKind": "All",
@@ -948,10 +1308,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.scss",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/bootstrap-icons.scss",
       "AssetKind": "All",
@@ -967,10 +1334,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/bootstrap-icons.scss"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff",
       "AssetKind": "All",
@@ -986,10 +1360,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2",
       "AssetKind": "All",
@@ -1005,10 +1386,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1024,10 +1412,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1043,10 +1438,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1062,10 +1464,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1081,10 +1490,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1100,10 +1516,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1119,10 +1542,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1138,10 +1568,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1157,10 +1594,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1176,10 +1620,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1195,10 +1646,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1214,10 +1672,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1233,10 +1698,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1252,10 +1724,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1271,10 +1750,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1290,10 +1776,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1309,10 +1802,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1328,10 +1828,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1347,10 +1854,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1366,10 +1880,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1385,10 +1906,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1404,10 +1932,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1423,10 +1958,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1442,10 +1984,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1461,10 +2010,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.css",
       "AssetKind": "All",
@@ -1480,10 +2036,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1499,10 +2062,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1518,10 +2088,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1537,10 +2114,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1556,10 +2140,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1575,10 +2166,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1594,10 +2192,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1613,10 +2218,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/css/prb.txt",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\css\\prb.txt",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/css/prb.txt",
       "AssetKind": "All",
@@ -1632,10 +2244,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/css/prb.txt"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1651,10 +2270,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1670,10 +2296,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1689,10 +2322,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1708,10 +2348,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1727,10 +2374,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1746,10 +2400,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1765,10 +2426,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1784,10 +2452,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.js",
       "AssetKind": "All",
@@ -1803,10 +2478,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1822,10 +2504,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1841,10 +2530,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/bootstrap/js/bootstrap.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/bootstrap/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1860,10 +2556,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/bootstrap/js/bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/glightbox/css/glightbox.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/glightbox/css/glightbox.css",
       "AssetKind": "All",
@@ -1879,10 +2582,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/glightbox/css/glightbox.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/glightbox/css/glightbox.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/glightbox/css/glightbox.min.css",
       "AssetKind": "All",
@@ -1898,10 +2608,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/glightbox/css/glightbox.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/glightbox/js/glightbox.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/glightbox/js/glightbox.js",
       "AssetKind": "All",
@@ -1917,10 +2634,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/glightbox/js/glightbox.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/glightbox/js/glightbox.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/glightbox/js/glightbox.min.js",
       "AssetKind": "All",
@@ -1936,10 +2660,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/glightbox/js/glightbox.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/php-email-form/validate.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/php-email-form/validate.js",
       "AssetKind": "All",
@@ -1955,10 +2686,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/php-email-form/validate.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/purecounter/purecounter_vanilla.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/purecounter/purecounter_vanilla.js",
       "AssetKind": "All",
@@ -1974,10 +2712,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/purecounter/purecounter_vanilla.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/purecounter/purecounter_vanilla.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/purecounter/purecounter_vanilla.js.map",
       "AssetKind": "All",
@@ -1993,10 +2738,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/purecounter/purecounter_vanilla.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/swiper/swiper-bundle.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/swiper/swiper-bundle.min.css",
       "AssetKind": "All",
@@ -2012,10 +2764,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/swiper/swiper-bundle.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/swiper/swiper-bundle.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/swiper/swiper-bundle.min.js",
       "AssetKind": "All",
@@ -2031,10 +2790,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/swiper/swiper-bundle.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/assets/vendor/swiper/swiper-bundle.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "assets/vendor/swiper/swiper-bundle.min.js.map",
       "AssetKind": "All",
@@ -2050,10 +2816,17 @@
       "OriginalItemSpec": "wwwroot/assets/vendor/swiper/swiper-bundle.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/css/site.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\css\\site.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -2069,10 +2842,17 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/favicon.ico",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\favicon.ico",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -2088,10 +2868,17 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/js/site.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\js\\site.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2107,10 +2894,17 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2126,10 +2920,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2145,10 +2946,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2164,10 +2972,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2183,10 +2998,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2202,10 +3024,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2221,10 +3050,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2240,10 +3076,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2259,10 +3102,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2278,10 +3128,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2297,10 +3154,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2316,10 +3180,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2335,10 +3206,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2354,10 +3232,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2373,10 +3258,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2392,10 +3284,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2411,10 +3310,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2430,10 +3336,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2449,10 +3362,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2468,10 +3388,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2487,10 +3414,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2506,10 +3440,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2525,10 +3466,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2544,10 +3492,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2563,10 +3518,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2582,10 +3544,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2601,10 +3570,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2620,10 +3596,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2639,10 +3622,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2658,10 +3648,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2677,10 +3674,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2696,10 +3700,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2715,10 +3726,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2734,10 +3752,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2753,10 +3778,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2772,10 +3804,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2791,10 +3830,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2810,10 +3856,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2829,10 +3882,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2848,10 +3908,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2867,10 +3934,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2886,10 +3960,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2905,10 +3986,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2924,10 +4012,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2943,10 +4038,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2962,10 +4064,17 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2981,10 +4090,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3000,10 +4116,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -3019,10 +4142,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3038,10 +4168,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3057,10 +4194,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3076,10 +4220,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3095,10 +4246,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3114,10 +4272,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3133,10 +4298,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3152,10 +4324,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3171,10 +4350,17 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
+<<<<<<< HEAD:obj/Debug/net8.0/linux-arm64/staticwebassets.build.json
       "Identity": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "RestoranSiparisTakipSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/wwwroot/",
+=======
+      "Identity": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "SourceId": "RestoranSiparisTakipSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\enesy\\OneDrive\\Masaüstü\\RestoranSiparisTakipSistemi\\wwwroot\\",
+>>>>>>> refs/remotes/origin/main:obj/Debug/net8.0/staticwebassets.build.json
       "BasePath": "_content/RestoranSiparisTakipSistemi",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
