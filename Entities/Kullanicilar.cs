@@ -11,7 +11,9 @@ public class Kullanicilar
     public string? Sifre { get; set; }
 
     [Required]
-    public string? Telefon { get; set; }
-    public string? Adres { get; set; }
+    public string? Telefon { get; set; } = "Belirtilmedi";
+    public string? Adres { get; set; } = "Belirtilmedi";
     public string? Rol { get; set; } = "Kullanici";
+    public string? ProfilFotoUrl { get; set; }
+    public string? Ulke { get; set; } = "Belirtilmedi";
 }

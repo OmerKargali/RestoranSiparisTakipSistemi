@@ -1,4 +1,6 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
+using RestoranSiparisTakipSistemi.Models;
 
 
 public class Header : ViewComponent

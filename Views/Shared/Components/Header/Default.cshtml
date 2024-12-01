@@ -1,17 +1,145 @@
+<style>
+  /* Arama çubuğu stili */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 10px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-input {
+    border: none;
+    background: transparent;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    color: #333;
+  }
+
+  .search-button {
+    border: none;
+    background: none;
+    color: #555;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: color 0.3s;
+  }
+
+  .search-button:hover {
+    color: #007bff;
+  }
+
+  /* Genel uyum */
+  .auth-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn-getstarted {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .btn-getstarted:hover {
+    background-color: #0056b3;
+  }
+
+  /* Profil kısmı genel stil */
+  .profile-section {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .profile-toggle {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  .profile-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .profile-dropdown a:hover {
+    background: #f1f1f1;
+    color: #007bff;
+  }
+
+  /* Profil fotoğrafı */
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+
+  .profile-name {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  /* Aktif olduğunda açılır menü göster */
+  .profile-section.active .profile-dropdown {
+    display: block;
+  }
+</style>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
   integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <header id="header" class="header d-flex align-items-center sticky-top">
   <div class="container position-relative d-flex align-items-center justify-content-between">
 
+    <!-- Logo -->
     <a href="/Home/Index" class="logo d-flex align-items-center me-auto me-xl-0">
       <h1 class="sitename">Lolee</h1>
-      <span></span>
     </a>
 
+    <!-- Arama Çubuğu -->
+    <form class="search-bar d-flex align-items-center ms-3" action="/Search" method="GET">
+      <input type="text" name="query" placeholder="Ara..." class="search-input">
+      <button type="submit" class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <!-- Menü ve Profil -->
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="/Home/Index" class="active">Anasayfa<br></a></li>
+        <li><a href="/Home/Index" class="active">Anasayfa</a></li>
         <li><a href="/Home/Hakkinda" class="active">Hakkında</a></li>
         <li><a href="/Home/Menu" class="active">Menü</a></li>
         <li><a href="/Home/Iletisim" class="active">İletişim</a></li>
@@ -21,16 +149,25 @@
             <span id="cart-count" class="cart-count">0</span>
           </a>
         </li>
-        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
-        <li><a class="" asp-controller="Home" asp-area="" asp-action="LogOut">Çıkış</a></li>
-        <div id="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1000;"></div>
-
       </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="btn-getstarted" href="/Hesap/Giris">Giriş Yap</a>
-
+    <!-- Giriş Yap ve Profil -->
+    <div class="auth-section d-flex align-items-center">
+      <a class="btn-getstarted ms-3" href="/Hesap/Giris">Giriş Yap</a>
+      <div class="profile-section ms-3">
+        <div class="profile-toggle d-flex align-items-center">
+          <img src="https://via.placeholder.com/40" alt="Profil Fotoğrafı" class="profile-img rounded-circle">
+          <span class="profile-name ms-2">Kullanıcı Adı</span>
+          <i class="fa-solid fa-chevron-down ms-2"></i>
+        </div>
+        <div class="profile-dropdown">
+          <a href="/Orders">Siparişlerim</a>
+          <a href="/Home/Profil">Profilim</a>
+          <a asp-controller="Home" asp-action="LogOut">Çıkış Yap</a>
+        </div>
+      </div>
+    </div>
 
   </div>
 </header>
