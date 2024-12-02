@@ -21,6 +21,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewData["Layout"] = "_Layout";
         return View();
     }
 
