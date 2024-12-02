@@ -1,0 +1,78 @@
+@model VMUrunler;
+@{
+    Layout = "_AdminLayout";
+}
+
+<body>
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Ürün Ekleme</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/Admin/Index">Admin</a></li>
+                    <li class="breadcrumb-item">Formlar</li>
+                    <li class="breadcrumb-item active">Ürün Ekleme</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ürün Ekleme Formu</h5>
+                            <form asp-controller="Admin" asp-action="UrunEkleme" method="post">
+                                <div class="row mb-3">
+                                    <label for="inputText" class="col-sm-2 col-form-label">Ürün Adı</nav></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="UrunAdi" asp-for="UrunAdi">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputText" class="col-sm-2 col-form-label">Ürün Fiyatı</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="Fiyat" asp-for="Fiyat">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputText" class="col-sm-2 col-form-label">Ürün Açıklaması</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="Aciklama" asp-for="Aciklama">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputText" class="col-sm-2 col-form-label">Ürün Görseli için URL
+                                        Giriniz:</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="UrunGorseliUrl"
+                                            asp-for="UrunGorseliUrl">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Kategori</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Lütfen Ürün Kategorisini Seçiniz</option>
+                                            <option value="1">Kahvaltı</option>
+                                            <option value="2">Yöresel Yemekler</option>
+                                            <option value="3">Kebap Çeşitleri</option>
+                                            <option value="3">Tatlılar</option>
+                                            <option value="3">İçecekler</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-10">
+                                        <button type="submit" class="btn btn-primary">Ürün Ekle</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

@@ -37,7 +37,11 @@ public class HomeController : Controller
 
     public IActionResult Menu()
     {
-        return View();
+        var UrunlerListe = _context.Urunler.ToList();
+        VMUrunler ModelUrunler = new VMUrunler();
+        ModelUrunler.list_Urunler = UrunlerListe;
+
+        return View(ModelUrunler);
     }
     public IActionResult Sepet()
     {

@@ -1,7 +1,0 @@
-﻿<Project>
-<<<<<<< HEAD
-  <Import Project="../build/RestoranSiparisTakipSistemi.props" />
-=======
-  <Import Project="..\build\RestoranSiparisTakipSistemi.props" />
->>>>>>> refs/remotes/origin/main
-</Project>

@@ -142,10 +142,8 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(
-    var(--accent-color) 50%,
-    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
-  );
+  background: radial-gradient(var(--accent-color) 50%,
+      color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -374,12 +372,12 @@ h6 {
     position: relative;
   }
 
-  .navmenu > ul > li {
+  .navmenu>ul>li {
     white-space: nowrap;
     padding: 15px 14px;
   }
 
-  .navmenu > ul > li:last-child {
+  .navmenu>ul>li:last-child {
     padding-right: 0;
   }
 
@@ -406,7 +404,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .navmenu > ul > li > a:before {
+  .navmenu>ul>li>a:before {
     content: "";
     position: absolute;
     height: 2px;
@@ -419,13 +417,13 @@ h6 {
   }
 
   .navmenu a:hover:before,
-  .navmenu li:hover > a:before,
+  .navmenu li:hover>a:before,
   .navmenu .active:before {
     visibility: visible;
     width: 100%;
   }
 
-  .navmenu li:hover > a,
+  .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
     color: color-mix(in srgb, var(--nav-color) 80%, black 50%);
@@ -464,11 +462,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover > a {
+  .navmenu .dropdown ul li:hover>a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover > ul {
+  .navmenu .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -480,7 +478,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover > ul {
+  .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -582,7 +580,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown > .dropdown-active {
+  .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -609,7 +607,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu > ul {
+  .mobile-nav-active .navmenu>ul {
     display: block;
   }
 }
@@ -619,15 +617,18 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   --heading-font: var(--default-font);
-  color: #f7f7f7; /* Yazı rengi */
-  background-color: #776464; /* Arkaplan rengi */
+  color: #f7f7f7;
+  /* Yazı rengi */
+  background-color: #776464;
+  /* Arkaplan rengi */
   font-size: 14px;
   padding: 40px 0;
   position: relative;
 }
 
 .footer .icon {
-  color: #f4a261; /* İkon rengi */
+  color: #f4a261;
+  /* İkon rengi */
   margin-right: 15px;
   font-size: 24px;
   line-height: 0;
@@ -661,7 +662,8 @@ h6 {
 
 .footer .social-links a:hover {
   color: #ffffff;
-  background-color: #f4a261; /* Hover rengi */
+  background-color: #f4a261;
+  /* Hover rengi */
 }
 
 .footer .copyright {
@@ -794,11 +796,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li + li {
+.page-title .breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li + li::before {
+.page-title .breadcrumbs ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -818,6 +820,7 @@ section,
 }
 
 @media (max-width: 1199px) {
+
   section,
   .section {
     scroll-margin-top: 56px;
@@ -1165,8 +1168,7 @@ section,
   cursor: pointer;
   height: 100%;
   border: 0;
-  border-bottom: 2px solid
-    color-mix(in srgb, var(--default-color), transparent 80%);
+  border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
 @media (max-width: 575px) {
@@ -1531,11 +1533,9 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(
-    in srgb,
-    var(--background-color),
-    transparent 20%
-  );
+  background-color: color-mix(in srgb,
+      var(--background-color),
+      transparent 20%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1623,8 +1623,9 @@ section,
 --------------------------------------------------------------*/
 /* Genel Düzenlemeler */
 /* Adres, Telefon, Çalışma Saatleri ile Form ve Harita Arasındaki Boşluk */
-.contact .row + .row {
-  margin-top: 40px; /* Aralarına 40px boşluk ekler */
+.contact .row+.row {
+  margin-top: 40px;
+  /* Aralarına 40px boşluk ekler */
 }
 
 .contact .info-item {
@@ -1633,10 +1634,12 @@ section,
   padding: 20px;
   text-align: center;
   border-radius: 15px;
-  height: 100%; /* Yükseklik eşitliği */
+  height: 100%;
+  /* Yükseklik eşitliği */
   display: flex;
   flex-direction: column;
-  align-items: center; /* İkon hizalaması */
+  align-items: center;
+  /* İkon hizalaması */
   justify-content: center;
 }
 
@@ -1650,12 +1653,14 @@ section,
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-bottom: 15px; /* İkon ile metin arası boşluk */
+  margin-bottom: 15px;
+  /* İkon ile metin arası boşluk */
 }
 
 .contact .google-map,
 .contact .php-email-form {
-  height: 520px; /* Eşit yükseklik */
+  height: 520px;
+  /* Eşit yükseklik */
 }
 
 .contact .php-email-form {
