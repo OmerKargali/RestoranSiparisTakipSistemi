@@ -1,3 +1,7 @@
 ﻿<Project>
+<<<<<<< HEAD
   <Import Project="../buildMultiTargeting/RestoranSiparisTakipSistemi.props" />
+=======
+  <Import Project="..\buildMultiTargeting\RestoranSiparisTakipSistemi.props" />
+>>>>>>> refs/remotes/origin/main
 </Project>
