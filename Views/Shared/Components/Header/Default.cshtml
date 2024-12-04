@@ -1,3 +1,6 @@
+@{
+  string strGirisGoster = ViewBag.GirisGoster;
+}
 <style>
   /* Arama çubuğu stili */
   .search-bar {
@@ -154,7 +157,11 @@
 
     <!-- Giriş Yap ve Profil -->
     <div class="auth-section d-flex align-items-center">
-      <a class="btn-getstarted ms-3" href="/Hesap/Giris">Giriş Yap</a>
+      @if (strGirisGoster == "1")
+      {
+        <a class="btn-getstarted ms-3" href="/Hesap/Giris">Giriş Yap</a>
+      }
+
       <div class="profile-section ms-3">
         <div class="profile-toggle d-flex align-items-center">
           <img src="https://via.placeholder.com/40" alt="Profil Fotoğrafı" class="profile-img rounded-circle">

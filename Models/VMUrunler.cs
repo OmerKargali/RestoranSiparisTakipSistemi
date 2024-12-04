@@ -8,7 +8,7 @@ namespace RestoranSiparisTakipSistemi.Models
         public double Fiyat { get; set; }
         public string? Aciklama { get; set; }
         public string? UrunGorseliUrl { get; set; }
-        public Urunler? enetity_Urunler { get; set; }
+        public Urunler? entity_Urunler { get; set; }
         public List<Urunler>? list_Urunler { get; set; }
     }
 }

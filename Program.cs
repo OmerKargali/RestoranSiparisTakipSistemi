@@ -9,17 +9,22 @@ builder.Services.AddDbContext<AppDBContext>(opts =>
 });
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
 
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromDays(1);
+});
 builder.Services.AddAuthentication(
     CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option =>
     {
         option.LoginPath = "/Hesap/Giris";
-        option.AccessDeniedPath = "/Hesap/Giris";
-        option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        option.AccessDeniedPath = "/Hesap/AccessDenied";
+        //option.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        //option.SlidingExpiration = false;
 
     });
+builder.Services.AddControllersWithViews();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,13 +35,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

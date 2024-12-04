@@ -1,15 +1,19 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestoranSiparisTakipSistemi.Models;
 
 namespace RestoranSiparisTakipSistemi.Controllers;
 
+
+[Authorize(Roles = "Admin")]
+
 public class AdminController : Controller
 {
     public AppDBContext _context;
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<AdminController> _logger;
 
-    public AdminController(AppDBContext context, ILogger<HomeController> logger)
+    public AdminController(AppDBContext context, ILogger<AdminController> logger)
     {
         _context = context;
         _logger = logger;
@@ -20,6 +24,7 @@ public class AdminController : Controller
         ViewData["Layout"] = "_AdminLayout";
         return View();
     }
+
 
     public IActionResult AdminProfil()
     {
@@ -34,6 +39,7 @@ public class AdminController : Controller
     {
         return View();
     }
+
     public IActionResult UrunEkleme()
     {
         return View();

@@ -1,0 +1,96 @@
+@model VMUrunler
+@{
+    Urunler? entity_Urunler = null;
+    if (Model != null)
+    {
+        entity_Urunler = Model.entity_Urunler;
+    }
+}
+
+
+<style>
+    /* Genel stil */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Ürün detayları kutusu */
+    .urun-detay {
+        background-color: #fff;
+        padding: 20px;
+        width: 60%;
+        margin: 50px auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    /* Ürün adı */
+    .urun-adi {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Ürün fotoğrafı */
+    .urun-resmi {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Ürün açıklaması */
+    .urun-aciklama {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    /* Ürün fiyatı */
+    .urun-fiyat {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Sepete ekle butonu */
+    .sepete-ekle {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .sepete-ekle:hover {
+        background-color: #45a049;
+    }
+</style>
+
+@if (entity_Urunler != null)
+{
+
+    <body>
+    <div class="urun-detay">
+        <h2 class="urun-adi">@entity_Urunler.UrunAdi</h2>
+        <img src="@entity_Urunler.UrunGorseliUrl" alt="Ürün Fotoğrafı" class="urun-resmi">
+        <p class="urun-aciklama">@entity_Urunler.Aciklama</p>
+        <h4 class="urun-fiyat">@entity_Urunler.Fiyat<span>₺</span></h4>
+
+        <form asp-controller="Home" asp-action="SiparisKaydet" method="post">
+            <input type="hidden" name="UrunId" value="@entity_Urunler.UrunId">
+            <button type="submit" style="btn btn-info; margin-bottom: 0px" class="btn btn-success"
+                onclick="javascript:return confirm('Urunu Sepete Eklemek İstediğinize Emin Misiniz?')">Sepete
+                Ekle</button>
+        </form>
+
+    </div>
+</body>
+}

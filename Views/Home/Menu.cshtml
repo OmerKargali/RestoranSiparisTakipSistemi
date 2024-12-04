@@ -84,8 +84,8 @@
             <div class="col-lg-4 menu-item" data-id="1">
               <a href="@x.UrunGorseliUrl" class="glightbox"><img src="@x.UrunGorseliUrl" class="menu-img img-fluid"
                   alt=""></a>
-              <h4>@x.UrunAdi</h4>
-              <p class="ingredients">
+              <h4><a href="/Home/SiparisDetay/@x.UrunId">@x.UrunAdi</a></h4>
+              @* <p class="ingredients">
                 @x.Aciklama
               </p>
               <div class="sepet">
@@ -93,7 +93,7 @@
                   @x.Fiyat <span>₺</span>
                 </p>
                 <button class="add-to-cart-btn">Sepete Ekle</button>
-              </div>
+              </div> *@
 
             </div>
 
@@ -109,16 +109,3 @@
 </section>
 
 <!-- /Menu Section -->
-
-<script>
-  document.querySelector('.add-to-cart-btn').addEventListener('click', function () {
-    var notification = document.getElementById('notification');
-    notification.style.display = 'block';
-
-    // 3 saniye sonra bildirimi gizle
-    setTimeout(function () {
-      notification.style.display = 'none';
-    }, 3000);
-  });
-
-</script>

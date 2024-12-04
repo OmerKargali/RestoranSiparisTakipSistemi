@@ -3,12 +3,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using RestoranSiparisTakipSistemi.Models;
-using Microsoft.AspNetCore.Identity;
 using System.Text.RegularExpressions;
-using RestoranSiparisTakipSistemi.Models;
 
 public class HesapController : Controller
 {
@@ -21,14 +17,31 @@ public class HesapController : Controller
 
     public IActionResult Giris()
     {
-        ClaimsPrincipal claimUser = HttpContext.User;
+        // ClaimsPrincipal claimUser = HttpContext.User;
 
-        if (claimUser.Identity?.IsAuthenticated == true)
-        {
-            return RedirectToAction("Menu", "Home");
-        }
+        // if (claimUser.Identity?.IsAuthenticated == true)
+        // {
+        //     var Rol = claimUser.FindFirstValue("Rol");
+
+        //     if (!string.IsNullOrEmpty(Rol))
+        //     {
+        //         if (Rol == "Admin")
+        //         {
+        //             return RedirectToAction("Index", "Admin");
+        //         }
+        //         else if (Rol == "Calisan")
+        //         {
+        //             return RedirectToAction("Dashboard", "Calisan");
+        //         }
+        //         else
+        //             return RedirectToAction("Menu", "Home");
+
+        //     }
+
+        // }
         return View();
     }
+
 
     [HttpPost]
     public async Task<IActionResult> Giris(VMGiris modelGiris)
@@ -46,7 +59,6 @@ public class HesapController : Controller
 
         if (!string.IsNullOrWhiteSpace(modelGiris.Eposta) && !string.IsNullOrWhiteSpace(modelGiris.Sifre))
         {
-            // Kullanıcıyı veritabanından kontrol et
             Kullanicilar? kullanici = _context.Kullanicilar.FirstOrDefault(x => x.Eposta == modelGiris.Eposta);
 
             if (kullanici == null || kullanici.Sifre != modelGiris.Sifre)
@@ -55,23 +67,36 @@ public class HesapController : Controller
             }
             else
             {
-                // Kullanıcı için Claim oluştur
                 List<Claim> claims = new List<Claim>
             {
 
-                new Claim(ClaimTypes.NameIdentifier, kullanici.Eposta), // Kullanıcı e-postasını NameIdentifier olarak ekle
-                new Claim(ClaimTypes.Name, kullanici.Ad),             // Kullanıcı adını Name olarak ekle
-                new Claim("KullaniciId", kullanici.KullaniciId.ToString()) // Kullanıcı ID'sini özel bir Claim olarak ekle
+                new Claim(ClaimTypes.NameIdentifier, kullanici.Eposta),
+                new Claim(ClaimTypes.Name, kullanici.Ad),
+                new Claim("KullaniciId", kullanici.KullaniciId.ToString()),
+                new Claim(ClaimTypes.Role, kullanici.Rol)
             };
 
-                // Kimlik oluşturma ve oturum başlatma
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 var principal = new ClaimsPrincipal(identity);
 
                 await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-                // Başarılı giriş sonrası yönlendirme
-                return RedirectToAction("Menu", "Home");
+
+                // return RedirectToAction("Giris", "Hesap");
+                if (!string.IsNullOrEmpty(kullanici.Rol))
+                {
+                    if (kullanici.Rol == "Admin")
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
+                    else if (kullanici.Rol == "Calisan")
+                    {
+                        return RedirectToAction("Index", "Calisan");
+                    }
+                    else
+                        return RedirectToAction("Menu", "Home");
+
+                }
             }
         }
         else
@@ -82,7 +107,6 @@ public class HesapController : Controller
         ViewData["ValidateMessage"] = HataMesaji;
         return View();
     }
-
 
     public IActionResult KayitOl()
     {
@@ -129,13 +153,18 @@ public class HesapController : Controller
 
                 _context.Kullanicilar.Add(dbkullanicilar);
                 _context.SaveChanges();
-                return RedirectToAction("Menu", "Home");
+                return RedirectToAction("Giris", "Hesap");
             }
         }
         HataMesaji = "Lütfen gerekli alanları doldurun.";
         ViewData["ValidateMessage"] = HataMesaji;
         return View(modelKayitOl);
+
     }
+    // public IActionResult AccessDenied()
+    // {
+    //     return View();
+    // }
 
 
     private bool SifreKontrol(string sifre)

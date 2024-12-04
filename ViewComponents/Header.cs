@@ -14,6 +14,13 @@ public class Header : ViewComponent
 
     public async Task<IViewComponentResult> InvokeAsync()
     {
+        string strGirisGoster = "1";
+        ClaimsPrincipal claimUser = HttpContext.User;
+        if (claimUser.Identity?.IsAuthenticated == true)
+        {
+            strGirisGoster = "0";
+        }
+        ViewBag.GirisGoster = strGirisGoster;
         return View();
     }
 

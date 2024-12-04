@@ -3,7 +3,8 @@ namespace RestoranSiparisTakipSistemi.Models
     public class VMSiparisler
     {
         public int SiparisId { get; set; }
-        public int MusteriId { get; set; }
+        public int KullaniciId { get; set; }
+        public int UrunId { get; set; }
         public DateTime Tarih { get; set; }
         public string? Durum { get; set; }
         public double ToplamTutar { get; set; }

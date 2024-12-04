@@ -1,4 +1,4 @@
-<section id="cart" class="cart section">
+@* <section id="cart" class="cart section">
   <div class="container">
     <h2>Alışveriş Sepeti</h2>
     <div class="cart-items"></div> <!-- Ürünlerin geleceği alan -->
@@ -107,4 +107,35 @@
 
   // Sayfa yüklendiğinde sepeti render et
   renderCart();
-</script>
+</script> *@
+
+
+
+@model IndexViewModel;
+@{
+  ViewData["Sepet"] = "Sepet";
+}
+<section id="cart" class="cart section">
+  <div class="container">
+    <h2>Alışveriş Sepeti</h2>
+    @if (Model.list_cstSiparis != null)
+    {
+      @foreach (var x in Model.list_cstSiparis)
+      {
+        <div class="col-lg-4 col-md-6 service-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+          <div>
+            <h4 class="title"><a href="" class="stretched-link">@x.UrunAdi</a></h4>
+            <p class="description">@x.BirimFiyat</p>
+            <p class="description">@x.Miktar</p>
+            <p class="description">@x.ToplamFiyat</p>
+          </div>
+        </div>
+
+      }
+    }
+    <button type="submit" class="complete-order-btn" href="/Home/SiparisTamamla">Siparişi Tamamla</button>
+
+  </div>
+  </div>
+</section>

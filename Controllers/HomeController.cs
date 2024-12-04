@@ -5,8 +5,11 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using RestoranSiparisTakipSistemi.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace RestoranSiparisTakipSistemi.Controllers;
+
+[Authorize(Roles = "Kullanici")]
 
 public class HomeController : Controller
 {
@@ -19,6 +22,7 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    [AllowAnonymous]
     public IActionResult Index()
     {
         ViewData["Layout"] = "_Layout";
@@ -43,10 +47,59 @@ public class HomeController : Controller
 
         return View(ModelUrunler);
     }
+
+    public IActionResult SiparisDetay(int id)
+    {
+        var entity = _context.Urunler.Where(x => x.UrunId == id).FirstOrDefault();
+        VMUrunler model = new VMUrunler();
+        model.entity_Urunler = entity;
+        return View(model);
+    }
+    public async Task<IActionResult> SiparisKaydet(int UrunId)
+    {
+        int kullaniciId = int.Parse(User.FindFirstValue("KullaniciId"));
+
+        var YeniUrun = new Siparisler()
+        {
+            UrunId = UrunId,
+            KullaniciId = kullaniciId,
+        };
+
+        await _context.Siparisler.AddAsync(YeniUrun);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Sepet", "Home");
+    }
+
     public IActionResult Sepet()
     {
-        return View();
+        IndexViewModel model = new IndexViewModel();
+        System.Security.Claims.ClaimsPrincipal claim = this.User;
+        string? strKullaniciId = claim.FindFirstValue("KullaniciId");
+        int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+        Kullanicilar? kullanici = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
+        if (kullanici != null)
+        {
+            int kullaniciId = kullanici.KullaniciId;
+            var siparisler = (from A in _context.Urunler
+                              join B in _context.Siparisler on A.UrunId equals B.UrunId
+                              where B.KullaniciId == intKullaniciId
+                              select new cstSiparis
+                              {
+                                  SiparisId = B.SiparisId,
+                                  UrunId = A.UrunId,
+                                  KullaniciId = B.KullaniciId,
+                                  BirimFiyat = A.Fiyat,
+                                  UrunAdi = A.UrunAdi
+
+                              }).ToList();
+
+            model.list_cstSiparis = siparisler;
+            model.Siparislers = new List<Siparisler>();
+        }
+        return View(model);
     }
+
     public IActionResult SiparisTamamla()
     {
         return View();
@@ -109,6 +162,7 @@ public class HomeController : Controller
         return RedirectToAction("Profil");
     }
 
+    [AllowAnonymous]
     public async Task<IActionResult> LogOut()
     {
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
