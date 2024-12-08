@@ -17,6 +17,9 @@ namespace RestoranSiparisTakipSistemi
         public Urunler? Urunler { get; set; }
         public IEnumerable<Urunler>? Urunlers { get; set; }
 
+        public OnaylananSiparis? OnaylananSiparis { get; set; }
+        public IEnumerable<OnaylananSiparis>? OnaylananSiparisler { get; set; }
+
         public List<cstSiparis>? list_cstSiparis { get; set; }
     }
 }

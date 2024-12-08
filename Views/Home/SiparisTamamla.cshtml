@@ -1,135 +1,147 @@
-<!DOCTYPE html>
-<html lang="tr">
+@model VMOnaylananSiparis;
+@{
+  int? intSiparisID = null;
+  if (Model != null)
+  {
+    intSiparisID = Model.SiparisId;
+  }
+}
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siparişi Tamamla</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siparişi Tamamla</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
 
-.form-container {
-  width: 50%;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    .form-container {
+      width: 50%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-h1 {
-  text-align: center;
-  color: #333;
-}
+    h1 {
+      text-align: center;
+      color: #333;
+    }
 
-fieldset {
-  border: none;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-}
+    fieldset {
+      border: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+    }
 
-legend {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #555;
-}
+    legend {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #555;
+    }
 
-label {
-  display: block;
-  margin: 8px 0 4px;
-  font-weight: bold;
-}
+    label {
+      display: block;
+      margin: 8px 0 4px;
+      font-weight: bold;
+    }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="month"],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="month"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-button:hover {
-  background-color: #45a049;
-}
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 
-    </style>
-    
 </head>
+
+
+
 <body>
-    <div class="form-container">
-        <h1>Siparişi Tamamla</h1>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Kişisel Bilgiler</legend>
-                <label for="name">Ad Soyad:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="phone">Telefon Numarası:</label>
-                <input type="tel" id="phone" name="phone" required>
-                <label for="email">E-posta Adresi:</label>
-                <input type="email" id="email" name="email">
-            </fieldset>
+  <div class="form-container">
+    <h1>Siparişi Tamamla</h1>
+    <form asp-controller="Home" asp-action="SiparisOnayla" method="post">
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label for="name">Ad Soyad:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Telefon Numarası:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="email">E-posta Adresi:</label>
+        <input type="email" id="email" name="email">
+      </fieldset>
 
-            <fieldset>
-                <legend>Teslimat Bilgileri</legend>
-                <label for="address">Adres:</label>
-                <input type="text" id="address" name="address" required>
-            </fieldset>
+      <fieldset>
+        <legend>Teslimat Bilgileri</legend>
+        <label for="TeslimatAdresi" adres>Adres:</label>
+        <input type="text" name="TeslimatAdresi" asp-for="TeslimatAdresi" required>
+      </fieldset>
 
-            <fieldset>
-                <legend>Ödeme Bilgileri</legend>
-                <label for="card-number">Kart Numarası:</label>
-                <input type="text" id="card-number" name="card-number" maxlength="16" required>
-                <label for="expiry-date">Son Kullanma Tarihi:</label>
-                <input type="month" id="expiry-date" name="expiry-date" required>
-                <label for="cvv">CVV Kodu:</label>
-                <input type="text" id="cvv" name="cvv" maxlength="3" required>
-                <label for="payment-method">Ödeme Yöntemi:</label>
-                <select id="payment-method" name="payment-method">
-                    <option value="credit-card">Kredi Kartı</option>
-                    <option value="cash-on-delivery">Kapıda Ödeme</option>
-                    <option value="mobile-payment">Mobil Ödeme</option>
-                    <option value="bank-transfer">Havale/EFT</option>
-                </select>
-            </fieldset>
+      <fieldset>
+        <legend>Ödeme Bilgileri</legend>
+        <label for="KrediKartiNumarasi">Kart Numarası:</label>
+        <input type="text" name="KrediKartiNumarasi" asp-for="KrediKartiNumarasi" maxlength="16" required>
 
-            <fieldset>
-                <legend>Sipariş Özeti</legend>
-                <label for="order-summary">Sepet İçeriği:</label>
-                <textarea id="order-summary" name="order-summary" rows="4" readonly></textarea>
-                <label for="estimated-delivery">Tahmini Teslimat Süresi:</label>
-                <input type="text" id="estimated-delivery" name="estimated-delivery">
-            </fieldset>
+        <label for="SonKullanmaTarihi">Son Kullanma Tarihi:</label>
+        <input type="datetime" name="SonKullanmaTarihi" asp-for="SonKullanmaTarihi" required>
+        <label for="CvvKodu">CVV Kodu:</label>
+        <input type="text" name="CvvKodu" asp-for="CvvKodu" maxlength="3" required>
+        <label for="OdemeYontemi">Ödeme Yöntemi:</label>
+        <select name="OdemeYontemi" asp-for="OdemeYontemi">
+          <option value="KrediKarti">Kredi Kartı</option>
+          <option value="KapidaOdeme">Kapıda Ödeme</option>
+          <option value="MobilOdeme">Mobil Ödeme</option>
+          <option value="HavaleorEft">Havale/EFT</option>
+        </select>
+      </fieldset>
 
-            <fieldset>
-                <legend>Notlar (Opsiyonel)</legend>
-                <label for="order-notes">Sipariş Notu:</label>
-                <textarea id="order-notes" name="order-notes" rows="3"></textarea>
-            </fieldset>
+      <fieldset>
+        <legend>Sipariş Özeti</legend>
+        <label for="order-summary">Sepet İçeriği:</label>
+        <textarea id="order-summary" name="order-summary" rows="4" readonly></textarea>
+        <label for="TahminiTeslimatSuresi">Tahmini Teslimat Süresi:</label>
+        <input type="text" name="TahminiTeslimatSuresi" asp-for="TahminiTeslimatSuresi">
+      </fieldset>
 
-            <button type="submit">Siparişi Tamamla</button>
-        </form>
-    </div>
+      <fieldset>
+        <legend>Notlar (Opsiyonel)</legend>
+        <label for="SiparisNotu">Sipariş Notu:</label>
+        <textarea name="SiparisNotu" rows="3" asp-for="SiparisNotu"></textarea>
+      </fieldset>
+
+      <input type="hidden" name="UrunId" value="@intSiparisID">
+      <button type="submit" class="btn btn-success"
+        onclick="return confirm('Ödemeyi Tamamlamak İstediğinize Emin Misiniz?')">Siparişi Tamamla</button>
+    </form>
+  </div>
 </body>
-</html>
+}

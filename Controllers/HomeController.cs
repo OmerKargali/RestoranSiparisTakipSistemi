@@ -63,6 +63,7 @@ public class HomeController : Controller
         {
             UrunId = UrunId,
             KullaniciId = kullaniciId,
+            Durum = "Sepette"
         };
 
         await _context.Siparisler.AddAsync(YeniUrun);
@@ -77,32 +78,228 @@ public class HomeController : Controller
         System.Security.Claims.ClaimsPrincipal claim = this.User;
         string? strKullaniciId = claim.FindFirstValue("KullaniciId");
         int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+
         Kullanicilar? kullanici = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
         if (kullanici != null)
         {
             int kullaniciId = kullanici.KullaniciId;
+
+            // "Sepette" durumundaki siparişleri al
             var siparisler = (from A in _context.Urunler
                               join B in _context.Siparisler on A.UrunId equals B.UrunId
-                              where B.KullaniciId == intKullaniciId
+                              where B.KullaniciId == intKullaniciId && B.Durum == "Sepette" // Durum "Sepette" olan siparişleri seç
                               select new cstSiparis
                               {
                                   SiparisId = B.SiparisId,
                                   UrunId = A.UrunId,
                                   KullaniciId = B.KullaniciId,
                                   BirimFiyat = A.Fiyat,
-                                  UrunAdi = A.UrunAdi
-
+                                  UrunAdi = A.UrunAdi,
+                                  UrunGorseliUrl = A.UrunGorseliUrl
                               }).ToList();
+
+            if (siparisler == null || !siparisler.Any())
+            {
+                // Eğer Sepet boşsa veya ürün bulunamıyorsa
+                ModelState.AddModelError("", "Sepetinizde ürün bulunmamaktadır.");
+            }
 
             model.list_cstSiparis = siparisler;
             model.Siparislers = new List<Siparisler>();
         }
+
         return View(model);
     }
 
+
+
+
+    // public async Task<IActionResult> SiparisTamamla(VMOnaylananSiparis modelOnaylananSiparis)
+    // {
+    //     int kullaniciId = int.Parse(User.FindFirstValue("kullaniciId"));
+
+    //     // Aktif siparişi al
+    //     var aktifSiparis = await _context.Siparisler
+    //         .FirstOrDefaultAsync(s => s.KullaniciId == kullaniciId);
+
+    //     if (aktifSiparis == null)
+    //     {
+    //         ModelState.AddModelError("", "Aktif bir sipariş bulunamadı.");
+    //         return View(modelOnaylananSiparis);
+    //     }
+
+    //     var yeniOnaylananSiparis = new OnaylananSiparis
+    //     {
+    //         SiparisId = aktifSiparis.SiparisId,
+    //         KullaniciId = kullaniciId,
+    //         TeslimatAdresi = modelOnaylananSiparis.TeslimatAdresi,
+    //         KrediKartiNumarasi = modelOnaylananSiparis.KrediKartiNumarasi,
+    //         SonKullanmaTarihi = modelOnaylananSiparis.SonKullanmaTarihi,
+    //         CvvKodu = modelOnaylananSiparis.CvvKodu,
+    //         OdemeYontemi = modelOnaylananSiparis.OdemeYontemi,
+    //         SiparisNotu = modelOnaylananSiparis.SiparisNotu
+    //     };
+
+    //     if (ModelState.IsValid)
+    //     {
+    //         // Onaylanan siparişi kaydet
+    //         await _context.OnaylananSiparis.AddAsync(yeniOnaylananSiparis);
+    //         await _context.SaveChangesAsync();
+
+    //         // Siparişin durumunu güncelle
+    //         aktifSiparis.Durum = "Sepete eklendi";
+    //         _context.Siparisler.Update(aktifSiparis);
+    //         await _context.SaveChangesAsync();
+
+    //         return RedirectToAction("SiparisOnayla", "Home");
+    //     }
+
+    //     ModelState.AddModelError("", "Geçersiz giriş.");
+    //     return View(modelOnaylananSiparis);
+    // }
+    // public IActionResult SiparisTamamla()
+    // {
+    //     IndexViewModel model = new IndexViewModel();
+    //     System.Security.Claims.ClaimsPrincipal claim = this.User;
+    //     string? strKullaniciId = claim.FindFirstValue("KullaniciId");
+    //     int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+    //     Kullanicilar? kullanici = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
+    //     if (kullanici != null)
+    //     {
+    //         int kullaniciId = kullanici.KullaniciId;
+    //         var siparisler = (from A in _context.Urunler
+    //                           join B in _context.Siparisler on A.UrunId equals B.UrunId
+    //                           where B.KullaniciId == intKullaniciId
+    //                           select new cstSiparis
+    //                           {
+    //                               SiparisId = B.SiparisId,
+    //                               UrunId = A.UrunId,
+    //                               KullaniciId = B.KullaniciId,
+    //                               BirimFiyat = A.Fiyat,
+    //                               UrunAdi = A.UrunAdi,
+    //                               UrunGorseliUrl = A.UrunGorseliUrl
+    //                           }).ToList();
+
+    //         model.list_cstSiparis = siparisler;
+    //         model.Siparislers = new List<Siparisler>();
+    //     }
+    //     return View(model);
+    // }
+
     public IActionResult SiparisTamamla()
     {
-        return View();
+
+        VMOnaylananSiparis model = new VMOnaylananSiparis();
+
+        int kullaniciId = int.Parse(User.FindFirstValue("kullaniciId"));
+
+        // Aktif siparişi al
+        var aktifSiparis = _context.Siparisler.FirstOrDefaultAsync(s => s.KullaniciId == kullaniciId);
+
+        if (aktifSiparis == null)
+        {
+            model.BilgiNotu = "Aktif siparişiniz bulunamadı";
+        }
+        else
+        {
+            model.SiparisId = aktifSiparis.Id;
+        }
+
+        return View(model);
+    }
+
+    // [HttpPost]
+    // public async Task<IActionResult> SiparisOnayla(VMOnaylananSiparis modelOnaylananSiparis)
+    // {
+    //     int kullaniciId = int.Parse(User.FindFirstValue("kullaniciId"));
+
+    //     // Aktif siparişi al
+    //     var aktifSiparis = await _context.Siparisler
+    //         .FirstOrDefaultAsync(s => s.KullaniciId == kullaniciId);
+
+    //     if (aktifSiparis == null)
+    //     {
+    //         ModelState.AddModelError("", "Aktif bir sipariş bulunamadı.");
+    //         return View(modelOnaylananSiparis);
+    //     }
+
+    //     var yeniOnaylananSiparis = new OnaylananSiparis
+    //     {
+    //         SiparisId = aktifSiparis.SiparisId,
+    //         KullaniciId = kullaniciId,
+    //         TeslimatAdresi = modelOnaylananSiparis.TeslimatAdresi,
+    //         KrediKartiNumarasi = modelOnaylananSiparis.KrediKartiNumarasi,
+    //         SonKullanmaTarihi = modelOnaylananSiparis.SonKullanmaTarihi,
+    //         CvvKodu = modelOnaylananSiparis.CvvKodu,
+    //         OdemeYontemi = modelOnaylananSiparis.OdemeYontemi,
+    //         SiparisNotu = modelOnaylananSiparis.SiparisNotu
+    //     };
+
+    //     if (ModelState.IsValid)
+    //     {
+    //         foreach(var sepetUrunu in aktifSiparis){
+
+    //         }
+    //         // Onaylanan siparişi kaydet
+    //         await _context.OnaylananSiparis.AddAsync(yeniOnaylananSiparis);
+    //         await _context.SaveChangesAsync();
+
+    //         // Siparişin durumunu güncelle
+    //         aktifSiparis.Durum = "Siparis Alindi";
+    //         _context.Siparisler.Update(aktifSiparis);
+    //         await _context.SaveChangesAsync();
+
+    //         return RedirectToAction("Index", "Home");
+    //     }
+
+    //     ModelState.AddModelError("", "Geçersiz giriş.");
+    //     return View(modelOnaylananSiparis);
+    // }
+    public async Task<IActionResult> SiparisOnayla(VMOnaylananSiparis modelOnaylananSiparis)
+    {
+        int kullaniciId = int.Parse(User.FindFirstValue("kullaniciId"));
+
+        // Sepetteki aktif siparişleri al (Durumu 'Sepette' olan)
+        var aktifSiparisler = await _context.Siparisler
+            .Where(s => s.KullaniciId == kullaniciId && s.Durum == "Sepette")
+            .FirstOrDefaultAsync();  // Sadece bir sipariş döndür
+
+        if (aktifSiparisler == null)
+        {
+            ModelState.AddModelError("", "Sepetinizde onaylanacak sipariş bulunmamaktadır.");
+            return View(modelOnaylananSiparis);
+        }
+
+        if (ModelState.IsValid)
+        {
+            // Onaylanan siparişi oluştur
+            var yeniOnaylananSiparis = new OnaylananSiparis
+            {
+                SiparisId = aktifSiparisler.SiparisId,
+                KullaniciId = kullaniciId,
+                TeslimatAdresi = modelOnaylananSiparis.TeslimatAdresi,
+                KrediKartiNumarasi = modelOnaylananSiparis.KrediKartiNumarasi,
+                SonKullanmaTarihi = modelOnaylananSiparis.SonKullanmaTarihi,
+                CvvKodu = modelOnaylananSiparis.CvvKodu,
+                OdemeYontemi = modelOnaylananSiparis.OdemeYontemi,
+                SiparisNotu = modelOnaylananSiparis.SiparisNotu,
+                Durum = "Siparis Alindi"
+            };
+
+            // Onaylanan siparişi OnaylananSiparis tablosuna ekle
+            await _context.OnaylananSiparis.AddAsync(yeniOnaylananSiparis);
+
+            // Sepetteki siparişin durumunu 'Tamamlandi' olarak güncelle
+            aktifSiparisler.Durum = "Beklemede";
+
+            // Değişiklikleri kaydet
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Menu", "Home");
+        }
+
+        ModelState.AddModelError("", "İşlem sırasında bir hata oluştu");
+        return View(modelOnaylananSiparis);
     }
 
     public IActionResult Profil()

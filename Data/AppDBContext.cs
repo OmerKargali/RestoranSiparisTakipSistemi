@@ -7,7 +7,7 @@ public class AppDBContext : DbContext
     public DbSet<SiparisDetaylari> SiparisDetaylari { get; set; }
     public DbSet<Siparisler> Siparisler { get; set; }
     public DbSet<Urunler> Urunler { get; set; }
-
+    public DbSet<OnaylananSiparis> OnaylananSiparis { get; set; }
     public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
     {
     }
