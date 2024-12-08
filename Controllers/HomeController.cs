@@ -38,6 +38,10 @@ public class HomeController : Controller
     {
         return View();
     }
+      public IActionResult Siparislerim()
+    {
+        return View();
+    }
 
     public IActionResult Menu()
     {

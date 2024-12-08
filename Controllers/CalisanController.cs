@@ -20,4 +20,12 @@ public class CalisanController : Controller
     {
         return View();
     }
+        public IActionResult ProfilDuzenleme()
+    {
+        return View();
+    }
+            public IActionResult SiparisDetay()
+    {
+        return View();
+    }
 }

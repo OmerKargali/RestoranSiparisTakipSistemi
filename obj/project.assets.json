@@ -2934,24 +2934,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/omerkargali/.nuget/packages/": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
+      "projectUniqueName": "c:\\AHMET\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
       "projectName": "RestoranSiparisTakipSistemi",
-      "projectPath": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/RestoranSiparisTakipSistemi.csproj",
-      "packagesPath": "/Users/omerkargali/.nuget/packages/",
-      "outputPath": "/Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/",
+      "projectPath": "c:\\AHMET\\RestoranSiparisTakipSistemi\\RestoranSiparisTakipSistemi.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "c:\\AHMET\\RestoranSiparisTakipSistemi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/omerkargali/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3015,16 +3022,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file /Users/omerkargali/Desktop/RestoranSiparisTakipSistemi/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
