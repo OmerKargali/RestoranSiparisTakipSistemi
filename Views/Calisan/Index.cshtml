@@ -1,261 +1,276 @@
+@model IndexViewModel;
 @{
-  Layout=null;
+  Layout = null;
 }
 <style>
-    /* Genel Ayarlar */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  /* Genel Ayarlar */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      min-height: 100vh;
-      overflow-y: auto;
-    }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
 
-    .container {
-      display: flex;
-      flex-wrap: nowrap;
-      width: 90%;
-      max-width: 1200px;
-      gap: 20px;
-      overflow: hidden;
-    }
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90%;
+    max-width: 1200px;
+    gap: 20px;
+    overflow: hidden;
+  }
 
-    /* Profil Kartı */
-.profile-card {
-  flex: 1;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  position: sticky;
-  top: 20px;
-  z-index: 2;
-  height: 400px; /* Sabit yükseklik */
-  overflow-y: auto; /* İçeriğin fazla olması durumunda kaydırma çubuğu ekler */
-}
+  /* Profil Kartı */
+  .profile-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    z-index: 2;
+    height: 400px;
+    /* Sabit yükseklik */
+    overflow-y: auto;
+    /* İçeriğin fazla olması durumunda kaydırma çubuğu ekler */
+  }
 
-    .profile-card .profile-image {
-      width: 120px;
-      margin-left: 75px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid #ff6b6b;
-      margin-bottom: 15px;
-    }
+  .profile-card .profile-image {
+    width: 120px;
+    margin-left: 75px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ff6b6b;
+    margin-bottom: 15px;
+  }
 
-    .profile-card h2 {
-      margin-bottom: 10px;
-      margin-left: 65px;
-      color: #333;
-    }
+  .profile-card h2 {
+    margin-bottom: 10px;
+    margin-left: 65px;
+    color: #333;
+  }
 
-    .profile-card p {
-      margin-bottom: 8px;
-      margin-left: 70px;
-      font-size: 1rem;
-      color: #555;
-    }
+  .profile-card p {
+    margin-bottom: 8px;
+    margin-left: 70px;
+    font-size: 1rem;
+    color: #555;
+  }
 
-    /* Sipariş Kartı */
-    .order-card {
-      flex: 3;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      overflow-y: auto;
-      max-height: 100vh;
-      position: relative;
-      top: 20px;
-    }
+  /* Sipariş Kartı */
+  .order-card {
+    flex: 3;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100vh;
+    position: relative;
+    top: 20px;
+  }
 
-    .cizgi {
-      display: flex;
-      align-items: center;
-      border-bottom: 2px solid #ff6b6b;
-      padding-bottom: 8px;
-    }
+  .cizgi {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 8px;
+  }
 
-    .order-card h2 {
-      margin-bottom: 20px;
-      font-size: 15px;
-      color: #333;
-    }
+  .order-card h2 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #333;
+  }
 
-    .order-item {
-      display: flex;
-      flex-direction: column;
-      background-color: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 15px;
-      margin-bottom: 15px;
-      transition: box-shadow 0.3s ease;
-    }
+  .order-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+  }
 
-    .order-item:hover {
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+  .order-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
 
-    .product-info p {
-      margin: 8px 0;
-      font-size: 1rem;
-      color: #444;
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+  .product-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #444;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    .product-sub-item {
-      background-color: #e9e9e9;
-      border-radius: 8px;
-      padding: 10px;
-      margin-top: 5px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: nowrap;
-    }
+  .product-sub-item {
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 
-    .product-sub-item p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #555;
-      flex: 1;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+  .product-sub-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    .product-quantity,
-    .product-price {
-      margin-left: 10px;
-      font-size: 0.9rem;
-      color: #444;
-      white-space: nowrap;
-    }
+  .product-quantity,
+  .product-price {
+    margin-left: 10px;
+    font-size: 0.9rem;
+    color: #444;
+    white-space: nowrap;
+  }
 
-    /* Profil Düzenleme Formu */
-    .profile-edit-form {
-      display: none;
-      background-color: #f8f9fa;
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+  /* Profil Düzenleme Formu */
+  .profile-edit-form {
+    display: none;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 
-    .profile-edit-form label {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 1rem;
-      color: #333;
-    }
+  .profile-edit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
 
-    .profile-edit-form input,
-    .profile-edit-form button {
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 8px;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ddd;
-    }
+  .profile-edit-form input,
+  .profile-edit-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
 
-    .profile-edit-form button {
-      background-color: #ff6b6b;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+  .profile-edit-form button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-    .profile-edit-form button:hover {
-      background-color: #cd4f4f;
-    }
+  .profile-edit-form button:hover {
+    background-color: #cd4f4f;
+  }
 
-    /* Toplam Fiyat ve Sipariş Sayısı */
-    .total-price {
-      margin-top: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      background-color: #f8f9fa;
-      border: 1px solid #ddd;
-      text-align: right;
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #333;
-    }
+  /* Toplam Fiyat ve Sipariş Sayısı */
+  .total-price {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
 
-    .order-actions {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .order-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    /* Linklerin genel görünümü */
-    a {
-      text-decoration: none;
-      color: #cd4f4f;
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
+  /* Linklerin genel görünümü */
+  a {
+    text-decoration: none;
+    color: #cd4f4f;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
 
-    /* Linklere hover efekti */
-    a:hover {
-      color: #842724;
-    }
-    .toplam{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    .toplamText{
-      border: 2px solid #ff6b6b;
-      border-radius: 10px;
-    }
-    .toplamText1{
-      padding: 50px;
-    }
-    .toplamText2{
-      padding: 50px 20px;
-    }
-    .icon{
-      margin-left: 300px;
-      outline: none; /* Odak çerçevesini kaldırır */
-      border: none; /* Butonun kenarındaki sınırı kaldırır */
-      background: #fff; /* Arka plan rengi */
-      color: white; /* Yazı rengi */
-      padding: 10px 20px; /* İç boşluk */
-      border-radius: 5px; /* Köşeleri yuvarlatır */
-      cursor: pointer; /* Fare işaretçisini değiştirir */
-    }
-    .icon img{
-      color: red;
-      width: 25px;
-      }
+  /* Linklere hover efekti */
+  a:hover {
+    color: #842724;
+  }
 
-    
-  </style>
+  .toplam {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .toplamText {
+    border: 2px solid #ff6b6b;
+    border-radius: 10px;
+  }
+
+  .toplamText1 {
+    padding: 50px;
+  }
+
+  .toplamText2 {
+    padding: 50px 20px;
+  }
+
+  .icon {
+    margin-left: 300px;
+    outline: none;
+    /* Odak çerçevesini kaldırır */
+    border: none;
+    /* Butonun kenarındaki sınırı kaldırır */
+    background: #fff;
+    /* Arka plan rengi */
+    color: white;
+    /* Yazı rengi */
+    padding: 10px 20px;
+    /* İç boşluk */
+    border-radius: 5px;
+    /* Köşeleri yuvarlatır */
+    cursor: pointer;
+    /* Fare işaretçisini değiştirir */
+  }
+
+  .icon img {
+    color: red;
+    width: 25px;
+  }
+</style>
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -264,6 +279,7 @@
     /* (Önceki stil kodları burada) */
   </style>
 </head>
+
 <body>
   <div class="container">
     <!-- Çalışan Profili -->
@@ -280,140 +296,60 @@
       <div class="cizgi">
         <div><a href="#" id="order-details-link">Sipariş Detayları</a></div>
         <div><a href="#" id="profile-edit-link">Profil düzenleme</a></div>
-        <button class="icon"><img src="assets/img/icon.png" alt="" ></button>
+        <button class="icon"><img src="assets/img/icon.png" alt=""></button>
       </div>
 
       <!-- Sipariş 1 -->
-      <div class="order-item">
-        <div class="product-info">
-          <p><strong>Sipariş Zamanı:</strong> 14:30</p>
-          <p><strong>Müşteri Notu:</strong> Lütfen acılı ve bol soslu olsun</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Hatay Usulü Zurna Dürüm</p>
-          <p class="product-quantity">Adet: 1</p>
-          <p>₺120</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Kola</p>
-          <p class="product-quantity">Adet: 2</p>
-          <p>₺15</p>
-        </div>
-        <div class="order-actions">
-          <div>
-            <label for="order-status-1">Sipariş Durumu:</label>
-            <select id="order-status-1" class="status-dropdown">
-              <option value="hazırlanıyor">Hazırlanıyor</option>
-              <option value="yolda">Yolda</option>
-              <option value="teslim edildi">Teslim Edildi</option>
-            </select>
-          </div>
-          <div class="order-summary">
-            <p>Toplam: ₺150</p>
-          </div>
-        </div>
-      </div>
-            <div class="order-item">
-        <div class="product-info">
-          <p><strong>Sipariş Zamanı:</strong> 14:30</p>
-          <p><strong>Müşteri Notu:</strong> Lütfen acılı ve bol soslu olsun</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Hatay Usulü Zurna Dürüm</p>
-          <p class="product-quantity">Adet: 1</p>
-          <p>₺120</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Kola</p>
-          <p class="product-quantity">Adet: 2</p>
-          <p>₺15</p>
-        </div>
-        <div class="order-actions">
-          <div>
-            <label for="order-status-1">Sipariş Durumu:</label>
-            <select id="order-status-1" class="status-dropdown">
-              <option value="hazırlanıyor">Hazırlanıyor</option>
-              <option value="yolda">Yolda</option>
-              <option value="teslim edildi">Teslim Edildi</option>
-            </select>
-          </div>
-          <div class="order-summary">
-            <p>Toplam: ₺150</p>
-          </div>
-        </div>
-      </div>
-     <div class="order-item">
-        <div class="product-info">
-          <p><strong>Sipariş Zamanı:</strong> 14:30</p>
-          <p><strong>Müşteri Notu:</strong> Lütfen acılı ve bol soslu olsun</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Hatay Usulü Zurna Dürüm</p>
-          <p class="product-quantity">Adet: 1</p>
-          <p>₺120</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Kola</p>
-          <p class="product-quantity">Adet: 2</p>
-          <p>₺15</p>
-        </div>
-        <div class="order-actions">
-          <div>
-            <label for="order-status-1">Sipariş Durumu:</label>
-            <select id="order-status-1" class="status-dropdown">
-              <option value="hazırlanıyor">Hazırlanıyor</option>
-              <option value="yolda">Yolda</option>
-              <option value="teslim edildi">Teslim Edildi</option>
-            </select>
-          </div>
-          <div class="order-summary">
-            <p>Toplam: ₺150</p>
-          </div>
-        </div>
-      </div>
-           <div class="order-item">
-        <div class="product-info">
-          <p><strong>Sipariş Zamanı:</strong> 14:30</p>
-          <p><strong>Müşteri Notu:</strong> Lütfen acılı ve bol soslu olsun</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Hatay Usulü Zurna Dürüm</p>
-          <p class="product-quantity">Adet: 1</p>
-          <p>₺120</p>
-        </div>
-        <div class="product-sub-item">
-          <p><strong>Ürün:</strong> Kola</p>
-          <p class="product-quantity">Adet: 2</p>
-          <p>₺15</p>
-        </div>
-        <div class="order-actions">
-          <div>
-            <label for="order-status-1">Sipariş Durumu:</label>
-            <select id="order-status-1" class="status-dropdown">
-              <option value="hazırlanıyor">Hazırlanıyor</option>
-              <option value="yolda">Yolda</option>
-              <option value="teslim edildi">Teslim Edildi</option>
-            </select>
-          </div>
-          <div class="order-summary">
-            <p>Toplam: ₺150</p>
-          </div>
-        </div>
-      </div>
+      @if (Model.list_cstOnaylananSiparisler != null && Model.list_cstOnaylananSiparisler.Any())
+      {
+        @foreach (var siparisYonet in Model.list_cstOnaylananSiparisler)
+        {
+          <div class="order-item">
+            <div class="product-info">
+              <p><img src="@siparisYonet.UrunGorseliUrl" alt=""></p>
 
-      <div class="order-item">
-        
-      <div class="toplam" id="toplam">
-        <div class="toplamText toplamText1">
-          <p><strong>Toplam Fiyat:</strong>250</p>
-        </div>
-        <div class="toplamText toplamText2">
-          <p><strong>Toplam Sipariş Sayısı:</strong>10</p>
-        </div>
-      </div>
+              <p><strong>Urun Adı :</strong>@siparisYonet.UrunAdi</p>
+              <p><strong>Müşteri Notu:</strong>@siparisYonet.SiparisNotu</p>
+            </div>
+            <div class="product-sub-item">
+              <p><strong>Teslimat Adresi:</strong>@siparisYonet.TeslimatAdresi</p>
+              <p class="product-quantity">Teslimat Süresi: <span>@siparisYonet.TahminiTeslimatSuresi</span></p>
+            </div>
+            <div class="order-actions">
+              <div>
+                <form asp-action="DurumGuncelle" method="post">
+                  <input type="hidden" name="OnaylananSiparisId" value="@siparisYonet.OnaylananSiparisId" />
+                  <select class="select" name="Durum">
+                    <option value="SiparisAlindi" selected="@(siparisYonet.Durum == "SiparisAlindi")">Sipariş Alındı
+                    </option>
+                    <option value="Hazirlaniyor" selected="@(siparisYonet.Durum == "Hazirlaniyor")">Hazırlanıyor</option>
+                    <option value="Yolda" selected="@(siparisYonet.Durum == "Yolda")">Yolda
+                    </option>
+                    <option value="TeslimEdildi" selected="@(siparisYonet.Durum == "TeslimEdildi")">Teslim Edildi</option>
+                  </select>
+                  <button class="button" type="submit">Durumu Güncelle</button>
+                </form>
+              </div>
+              <div class="order-summary">
+                <p>Toplam: ₺150</p>
+              </div>
+            </div>
+          </div>
 
-      </div>
-      <!-- Profil Düzenleme Formu -->
+          <div class="order-item">
+
+            <div class="toplam" id="toplam">
+              <div class="toplamText toplamText1">
+                <p><strong>Toplam Fiyat:</strong>250</p>
+              </div>
+              <div class="toplamText toplamText2">
+                <p><strong>Toplam Sipariş Sayısı:</strong>10</p>
+              </div>
+            </div>
+
+          </div>
+        }
+      }<!-- Profil Düzenleme Formu -->
       <div class="profile-edit-form" id="profile-edit-form">
         <form action="/profil-guncelle" method="POST" enctype="multipart/form-data">
           <div>
@@ -437,19 +373,19 @@
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const profileEditLink = document.getElementById('profile-edit-link');
       const orderDetailsLink = document.getElementById('order-details-link');
       const profileEditForm = document.getElementById('profile-edit-form');
       const orderDetailsCard = document.getElementById('order-details');
 
-      profileEditLink.addEventListener('click', function(e) {
+      profileEditLink.addEventListener('click', function (e) {
         e.preventDefault(); // Bağlantının varsayılan davranışını engeller
         profileEditForm.style.display = 'block';
         orderDetailsCard.querySelector('.order-item').style.display = 'none'; // Sipariş öğesini gizle
       });
 
-      orderDetailsLink.addEventListener('click', function(e) {
+      orderDetailsLink.addEventListener('click', function (e) {
         e.preventDefault(); // Bağlantının varsayılan davranışını engeller
         profileEditForm.style.display = 'none';
         orderDetailsCard.querySelector('.order-item').style.display = 'block'; // Sipariş öğesini göster
@@ -457,33 +393,34 @@
     });
   </script>
 </body>
+
 </html>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const profileEditLink = document.getElementById('profile-edit-link');
-  const orderDetailsLink = document.getElementById('order-details-link');
-  const profileEditForm = document.getElementById('profile-edit-form');
-  const orderDetailsCard = document.getElementById('order-details');
+  document.addEventListener('DOMContentLoaded', function () {
+    const profileEditLink = document.getElementById('profile-edit-link');
+    const orderDetailsLink = document.getElementById('order-details-link');
+    const profileEditForm = document.getElementById('profile-edit-form');
+    const orderDetailsCard = document.getElementById('order-details');
 
-  profileEditLink.addEventListener('click', function(e) {
-    e.preventDefault(); // Bağlantının varsayılan davranışını engeller
-    profileEditForm.style.display = 'block';
-    // Tüm sipariş öğelerini gizle
-    const orderItems = orderDetailsCard.querySelectorAll('.order-item');
-    orderItems.forEach(item => {
-      item.style.display = 'none';
+    profileEditLink.addEventListener('click', function (e) {
+      e.preventDefault(); // Bağlantının varsayılan davranışını engeller
+      profileEditForm.style.display = 'block';
+      // Tüm sipariş öğelerini gizle
+      const orderItems = orderDetailsCard.querySelectorAll('.order-item');
+      orderItems.forEach(item => {
+        item.style.display = 'none';
+      });
+    });
+
+    orderDetailsLink.addEventListener('click', function (e) {
+      e.preventDefault(); // Bağlantının varsayılan davranışını engeller
+      profileEditForm.style.display = 'none';
+      // Tüm sipariş öğelerini göster
+      const orderItems = orderDetailsCard.querySelectorAll('.order-item');
+      orderItems.forEach(item => {
+        item.style.display = 'block';
+      });
     });
   });
-
-  orderDetailsLink.addEventListener('click', function(e) {
-    e.preventDefault(); // Bağlantının varsayılan davranışını engeller
-    profileEditForm.style.display = 'none';
-    // Tüm sipariş öğelerini göster
-    const orderItems = orderDetailsCard.querySelectorAll('.order-item');
-    orderItems.forEach(item => {
-      item.style.display = 'block';
-    });
-  });
-});
 
 </script>

@@ -77,13 +77,24 @@
 
   .complete-order-btn {
     padding: 10px 20px;
-    background-color: #ff5722;
+    background-color: brown;
     color: white;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  .buttonComplete button a {
+    color: white;
+  }
+
+  .buttonComplete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
   }
 
   .complete-order-btn:hover {
@@ -159,18 +170,14 @@
         }
       </div>
 
-      <button type="submit" class="complete-order-btn"><a href="/Home/SiparisTamamla">Sipariş Tamamla</a></button>
-
+      <div class="buttonComplete">
+        <button type="submit" class="complete-order-btn"><a href="/Home/SiparisTamamla">Sipariş Tamamla</a></button>
+      </div>
 
     }
-<<<<<<< HEAD
     else
     {
       <p class="empty-cart-message">Sepetiniz şu an boş.</p>
     }
-=======
-    <button type="submit" class="complete-order-btn" ><a href="/Home/SiparisTamamla">Siparişi Tamamla</a></button>
-
->>>>>>> refs/remotes/origin/main
   </div>
 </section>

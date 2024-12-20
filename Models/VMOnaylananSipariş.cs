@@ -13,6 +13,8 @@ public class VMOnaylananSiparis
     public string? Durum { get; set; }
     public string? BilgiNotu { get; set; }
     public Siparisler? Siparisler { get; set; }
-
+    public List<cstSiparis>? list_cstSiparis { get; set; }
+    public Kullanicilar? Kullanicilar { get; set; }
+    public List<OnaylananSiparis>? list_OnaylananSiparis { get; set; }
 
 }

@@ -17,28 +17,6 @@ public class HesapController : Controller
 
     public IActionResult Giris()
     {
-        // ClaimsPrincipal claimUser = HttpContext.User;
-
-        // if (claimUser.Identity?.IsAuthenticated == true)
-        // {
-        //     var Rol = claimUser.FindFirstValue("Rol");
-
-        //     if (!string.IsNullOrEmpty(Rol))
-        //     {
-        //         if (Rol == "Admin")
-        //         {
-        //             return RedirectToAction("Index", "Admin");
-        //         }
-        //         else if (Rol == "Calisan")
-        //         {
-        //             return RedirectToAction("Dashboard", "Calisan");
-        //         }
-        //         else
-        //             return RedirectToAction("Menu", "Home");
-
-        //     }
-
-        // }
         return View();
     }
 
@@ -161,11 +139,6 @@ public class HesapController : Controller
         return View(modelKayitOl);
 
     }
-    // public IActionResult AccessDenied()
-    // {
-    //     return View();
-    // }
-
 
     private bool SifreKontrol(string sifre)
     {
