@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="tr">
+@model IndexViewModel
+@{
+  ViewData["Title"] = "Siparislerim Page";
+}
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Siparişlerim</title>
+  <style>
+    .empty-cart-message {
+      color: #ff0000;
+      /* Kırmızı renk, dikkat çekici olur */
+      background-color: #fff3f3;
+      /* Hafif kırmızımsı arka plan */
+      padding: 15px;
+      border: 2px solid #ff0000;
+      /* Çerçeve ile vurgulama */
+      border-radius: 5px;
+      /* Köşeleri yuvarlatma */
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* Hafif gölge efekti */
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 
 <body>
@@ -13,49 +34,39 @@
   </div>
   <main>
     <section class="order-container">
-      <!-- Sipariş Kartı 1 -->
-      <div class="order-card">
-        <div class="order-image">
-          <img src="https://via.placeholder.com/100" alt="Sabir Görsel">
-        </div>
-        <div class="order-details">
-          <!-- Ürünler -->
-          <div class="item">
-            <div class="item-info">
-              <span><strong>Pizza</strong></span>
-              <span>Adet: 2</span>
-              <span>Toplam: 100 TL</span>
+      @if (Model.list_cstOnaylananSiparisler != null && Model.list_cstOnaylananSiparisler.Any())
+      {
+        @foreach (var x in Model.list_cstOnaylananSiparisler)
+        {
+          <!-- Sipariş Kartı 1 -->
+          <div class="order-card">
+            <div class="order-image">
+              <img src="@x.UrunGorseliUrl" alt="Sabir Görsel">
+            </div>
+            <div class="order-details">
+              <!-- Ürünler -->
+              <div class="item">
+                <div class="item-info">
+                  <span><strong>@x.UrunAdi</strong></span>
+                  <span>Toplam: @x.BirimFiyat</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="order-status">
+              <p><strong>Durum:</strong> @x.Durum</p>
+              <button class="cancel-button">İptal Et</button>
             </div>
           </div>
-          <div class="item">
-            <div class="item-info">
-              <span><strong>Hamburger</strong></span>
-              <span>Adet: 1</span>
-              <span>Toplam: 50 TL</span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item-info">
-              <span><strong>Kola</strong></span>
-              <span>Adet: 3</span>
-              <span>Toplam: 30 TL</span>
-            </div>
-          </div>
-        </div>
-        <div class="order-status">
-          <p><strong>Durum:</strong> Yolda</p>
-          <button class="cancel-button">İptal Et</button>
-        </div>
-      </div>
+        }
+      }
+      else
+      {
+        <p class="empty-cart-message">Onaylanan Siparişiniz Bulunmadı.</p>
+      }
     </section>
   </main>
-  <footer>
-    <p>&copy; 2023 Siparişlerim</p>
-  </footer>
 </body>
-
-</html>
-
 <style>
   /* Temel sıfırlamalar */
   * {

@@ -5,6 +5,8 @@ public class cstOnaylananSiparisler
     public int KullaniciId { get; set; }
     public int UrunId { get; set; }
     public string? UrunAdi { get; set; }
+    public double BirimFiyat { get; set; }
+
     public string? UrunGorseliUrl { get; set; }
     public string? TeslimatAdresi { get; set; }
     public string? KrediKartiNumarasi { get; set; }

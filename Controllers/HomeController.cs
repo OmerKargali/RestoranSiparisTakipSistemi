@@ -40,7 +40,41 @@ public class HomeController : Controller
     }
     public IActionResult Siparislerim()
     {
-        return View();
+        IndexViewModel model = new IndexViewModel();
+        System.Security.Claims.ClaimsPrincipal claim = this.User;
+        string? strKullaniciId = claim.FindFirstValue("KullaniciId");
+        int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+        Kullanicilar? kullanici = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
+
+        if (kullanici != null)
+        {
+            int kullaniciId = kullanici.KullaniciId;
+            var OnaylananSiparisler = (from A in _context.Urunler
+                                       join B in _context.Siparisler on A.UrunId equals B.UrunId
+                                       join C in _context.OnaylananSiparis on B.SiparisId equals C.SiparisId
+                                       where B.KullaniciId == intKullaniciId
+                                       select new cstOnaylananSiparisler
+                                       {
+                                           SiparisId = B.SiparisId,
+                                           UrunId = A.UrunId,
+                                           KullaniciId = B.KullaniciId,
+                                           BirimFiyat = A.Fiyat,
+                                           UrunAdi = A.UrunAdi,
+                                           UrunGorseliUrl = A.UrunGorseliUrl,
+                                           Durum = C.Durum
+                                       }).ToList();
+
+            if (OnaylananSiparisler == null || !OnaylananSiparisler.Any())
+            {
+                // Eğer Sepet boşsa veya ürün bulunamıyorsa
+                ModelState.AddModelError("", "Onaylanmış ürününüz bulunmamaktadır.");
+            }
+
+            model.list_cstOnaylananSiparisler = OnaylananSiparisler;
+            model.OnaylananSiparislers = new List<OnaylananSiparis>();
+
+        }
+        return View(model);
     }
 
     public IActionResult Menu()
@@ -172,13 +206,13 @@ public class HomeController : Controller
             // Onaylanan siparişi OnaylananSiparis tablosuna ekle
             await _context.OnaylananSiparis.AddAsync(yeniOnaylananSiparis);
 
-            // Sepetteki siparişin durumunu 'Tamamlandi' olarak güncelle
+            // Sepetteki siparişin durumunu 'Beklemede' olarak güncelle
             aktifSiparisler.Durum = "Beklemede";
 
             // Değişiklikleri kaydet
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("Menu", "Home");
+            return RedirectToAction("Siparislerim", "Home");
         }
 
         ModelState.AddModelError("", "İşlem sırasında bir hata oluştu");
