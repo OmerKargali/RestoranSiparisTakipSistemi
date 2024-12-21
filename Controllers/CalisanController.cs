@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace RestoranSiparisTakipSistemi.Controllers;
 
@@ -53,15 +55,6 @@ public class CalisanController : Controller
         return View(model);
     }
 
-    public IActionResult ProfilDuzenleme()
-    {
-        return View();
-    }
-    public IActionResult SiparisDetay()
-    {
-        return View();
-    }
-
     [HttpPost]
     public IActionResult DurumGuncelle(int OnaylananSiparisId, string Durum)
     {
@@ -73,5 +66,11 @@ public class CalisanController : Controller
         }
 
         return RedirectToAction("Index");
+    }
+
+    public async Task<IActionResult> LogOut()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return RedirectToAction("Giris", "Hesap");
     }
 }

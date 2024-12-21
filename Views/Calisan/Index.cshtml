@@ -268,9 +268,6 @@
 </style>
 
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -280,121 +277,101 @@
   </style>
 </head>
 
-<body>
-  <div class="container">
-    <!-- Çalışan Profili -->
-    <section class="profile-card">
-      <h2>Çalışan Profili</h2>
-      <img src="assets/img/profile-img.jpg" class="profile-image">
-      <p><strong>Ad:</strong> Hasan Kara</p>
-      <p><strong>E-posta:</strong> hasan@gmail.com</p>
-      <p><strong>Görev:</strong> Çalışan</p>
-    </section>
+<div class="container">
+  <!-- Çalışan Profili -->
+  <section class="profile-card">
+    <h2>Portföy</h2>
+    <img src="/assets/img/Adsiztasarimmmm.png" class="profile-image">
+    <p><strong>Restorant</strong> LoLee</p>
+    <p><strong>E-posta:</strong> lolee@gmail.com</p>
+  </section>
 
-    <!-- Sipariş Kartı ve Profil Düzenleme Formu -->
-    <section class="order-card" id="order-details">
-      <div class="cizgi">
-        <div><a href="#" id="order-details-link">Sipariş Detayları</a></div>
-        <div><a href="#" id="profile-edit-link">Profil düzenleme</a></div>
-        <button class="icon"><img src="assets/img/icon.png" alt=""></button>
-      </div>
+  <!-- Sipariş Kartı ve Profil Düzenleme Formu -->
+  <section class="order-card" id="order-details">
+    <div class="cizgi">
+      <div><a href="#" id="order-details-link">Sipariş Detayları</a></div>
+      <a asp-controller="Home" asp-action="LogOut"><button class="icon"><img src="assets/img/icon.png"
+            alt=""></button></a>
+    </div>
 
-      <!-- Sipariş 1 -->
-      @if (Model.list_cstOnaylananSiparisler != null && Model.list_cstOnaylananSiparisler.Any())
+    <!-- Sipariş 1 -->
+    @if (Model.list_cstOnaylananSiparisler != null && Model.list_cstOnaylananSiparisler.Any())
+    {
+      @foreach (var siparisYonet in Model.list_cstOnaylananSiparisler)
       {
-        @foreach (var siparisYonet in Model.list_cstOnaylananSiparisler)
-        {
-          <div class="order-item">
-            <div class="product-info">
-              <p><img src="@siparisYonet.UrunGorseliUrl" alt=""></p>
+        <div class="order-item">
+          <div class="product-info">
+            <p><img src="@siparisYonet.UrunGorseliUrl" alt=""></p>
 
-              <p><strong>Urun Adı :</strong>@siparisYonet.UrunAdi</p>
-              <p><strong>Müşteri Notu:</strong>@siparisYonet.SiparisNotu</p>
-            </div>
-            <div class="product-sub-item">
-              <p><strong>Teslimat Adresi:</strong>@siparisYonet.TeslimatAdresi</p>
-              <p class="product-quantity">Teslimat Süresi: <span>@siparisYonet.TahminiTeslimatSuresi</span></p>
-            </div>
-            <div class="order-actions">
-              <div>
-                <form asp-action="DurumGuncelle" method="post">
-                  <input type="hidden" name="OnaylananSiparisId" value="@siparisYonet.OnaylananSiparisId" />
-                  <select class="select" name="Durum">
-                    <option value="SiparisAlindi" selected="@(siparisYonet.Durum == "SiparisAlindi")">Sipariş Alındı
-                    </option>
-                    <option value="Hazirlaniyor" selected="@(siparisYonet.Durum == "Hazirlaniyor")">Hazırlanıyor</option>
-                    <option value="Yolda" selected="@(siparisYonet.Durum == "Yolda")">Yolda
-                    </option>
-                    <option value="TeslimEdildi" selected="@(siparisYonet.Durum == "TeslimEdildi")">Teslim Edildi</option>
-                  </select>
-                  <button class="button" type="submit">Durumu Güncelle</button>
-                </form>
-              </div>
-              <div class="order-summary">
-                <p>Toplam: ₺150</p>
-              </div>
+            <p><strong>Urun Adı :</strong>@siparisYonet.UrunAdi</p>
+            <p><strong>Müşteri Notu:</strong>@siparisYonet.SiparisNotu</p>
+          </div>
+          <div class="product-sub-item">
+            <p><strong>Teslimat Adresi:</strong>@siparisYonet.TeslimatAdresi</p>
+            <p class="product-quantity">Teslimat Süresi: <span>@siparisYonet.TahminiTeslimatSuresi</span></p>
+          </div>
+          <div class="order-actions">
+            <div>
+              <form asp-action="DurumGuncelle" method="post">
+                <input type="hidden" name="OnaylananSiparisId" value="@siparisYonet.OnaylananSiparisId" />
+                <select class="select" name="Durum">
+                  <option value="SiparisAlindi" selected="@(siparisYonet.Durum == "SiparisAlindi")">Sipariş Alındı
+                  </option>
+                  <option value="Hazirlaniyor" selected="@(siparisYonet.Durum == "Hazirlaniyor")">Hazırlanıyor</option>
+                  <option value="Yolda" selected="@(siparisYonet.Durum == "Yolda")">Yolda
+                  </option>
+                  <option value="TeslimEdildi" selected="@(siparisYonet.Durum == "TeslimEdildi")">Teslim Edildi</option>
+                </select>
+                <button class="button" type="submit">Durumu Güncelle</button>
+              </form>
             </div>
           </div>
+        </div>
 
-          <div class="order-item">
+        <div class="order-item">
 
-            <div class="toplam" id="toplam">
-              <div class="toplamText toplamText1">
-                <p><strong>Toplam Fiyat:</strong>250</p>
-              </div>
-              <div class="toplamText toplamText2">
-                <p><strong>Toplam Sipariş Sayısı:</strong>10</p>
-              </div>
+          <div class="toplam" id="toplam">
+            <div class="toplamText toplamText1">
+              <p><strong>Toplam Fiyat:</strong>250</p>
             </div>
+            <div class="toplamText toplamText2">
+              <p><strong>Toplam Sipariş Sayısı:</strong>10</p>
+            </div>
+          </div>
 
-          </div>
-        }
-      }<!-- Profil Düzenleme Formu -->
-      <div class="profile-edit-form" id="profile-edit-form">
-        <form action="/profil-guncelle" method="POST" enctype="multipart/form-data">
-          <div>
-            <label for="username">Kullanıcı Adı:</label>
-            <input type="text" id="username" name="username" required>
-          </div>
-          <div>
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div>
-            <label for="password">Şifre:</label>
-            <input type="password" id="password" name="password">
-          </div>
-          <div>
-            <button type="submit">Güncelle</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </div>
+        </div>
+      }
+    }<!-- Profil Düzenleme Formu -->
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const profileEditLink = document.getElementById('profile-edit-link');
-      const orderDetailsLink = document.getElementById('order-details-link');
-      const profileEditForm = document.getElementById('profile-edit-form');
-      const orderDetailsCard = document.getElementById('order-details');
+  </section>
+</div>
 
-      profileEditLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Bağlantının varsayılan davranışını engeller
-        profileEditForm.style.display = 'block';
-        orderDetailsCard.querySelector('.order-item').style.display = 'none'; // Sipariş öğesini gizle
-      });
 
-      orderDetailsLink.addEventListener('click', function (e) {
-        e.preventDefault(); // Bağlantının varsayılan davranışını engeller
-        profileEditForm.style.display = 'none';
-        orderDetailsCard.querySelector('.order-item').style.display = 'block'; // Sipariş öğesini göster
-      });
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const profileEditLink = document.getElementById('profile-edit-link');
+    const orderDetailsLink = document.getElementById('order-details-link');
+    const profileEditForm = document.getElementById('profile-edit-form');
+    const orderDetailsCard = document.getElementById('order-details');
+
+    profileEditLink.addEventListener('click', function (e) {
+      e.preventDefault(); // Bağlantının varsayılan davranışını engeller
+      profileEditForm.style.display = 'block';
+      orderDetailsCard.querySelector('.order-item').style.display = 'none'; // Sipariş öğesini gizle
     });
-  </script>
-</body>
 
-</html>
+    orderDetailsLink.addEventListener('click', function (e) {
+      e.preventDefault(); // Bağlantının varsayılan davranışını engeller
+      profileEditForm.style.display = 'none';
+      orderDetailsCard.querySelector('.order-item').style.display = 'block'; // Sipariş öğesini göster
+    });
+  });
+</script>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const profileEditLink = document.getElementById('profile-edit-link');
