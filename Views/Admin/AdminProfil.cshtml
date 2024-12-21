@@ -13,158 +13,158 @@
 {
     <main id="main" class="main">
 
-        <div class="pagetitle">
-            <h1>Profil</h1>
-            <nav>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
-                    <li class="breadcrumb-item">Kullanıcılar</li>
-                    <li class="breadcrumb-item active">Profil</li>
-                </ol>
-            </nav>
-        </div><!-- End Page Title -->
+    <div class="pagetitle">
+        <h1>Profil</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+                <li class="breadcrumb-item">Kullanıcılar</li>
+                <li class="breadcrumb-item active">Profil</li>
+            </ol>
+        </nav>
+    </div>
 
-        <section class="section profile">
-            <div class="row">
-                <div class="col-xl-4">
+    <section class="section profile">
+        <div class="row">
+            <div class="col-xl-4">
 
-                    <div class="card">
-                        <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                <div class="card">
+                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
-                            <!-- Profil Fotoğrafı -->
-                            <img src="@entity_kullanicilar.ProfilFotoUrl" alt="Profil Fotoğrafı" class="rounded-circle">
-                            <h2>@entity_kullanicilar.Ad <span>@entity_kullanicilar.Soyad</span></h2>
-                            <div class="social-links mt-2">
-                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <img src="@entity_kullanicilar.ProfilFotoUrl" alt="Profil Fotoğrafı" class="rounded-circle">
+                        <h2>@entity_kullanicilar.Ad <span>@entity_kullanicilar.Soyad</span></h2>
+                        <div class="social-links mt-2">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xl-8">
+
+                <div class="card">
+                    <div class="card-body pt-3">
+                        <ul class="nav nav-tabs nav-tabs-bordered">
+                            <li class="nav-item">
+                                <button class="nav-link active" data-bs-toggle="tab"
+                                    data-bs-target="#profil-ozeti">Özet</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profil-duzenle">Profil
+                                    Düzenle</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2">
+
+                            <div class="tab-pane fade show active profil-ozeti" id="profil-ozeti">
+                                <h5 class="card-title">Profil Bilgileri</h5>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Ad - Soyad</div>
+                                    <div class="col-lg-9 col-md-8">@entity_kullanicilar.Ad
+                                        <span>@entity_kullanicilar.Soyad</span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Ülke</div>
+                                    <div class="col-lg-9 col-md-8">@entity_kullanicilar.Ulke</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Adres</div>
+                                    <div class="col-lg-9 col-md-8">@entity_kullanicilar.Adres</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">Telefon</div>
+                                    <div class="col-lg-9 col-md-8">@entity_kullanicilar.Telefon</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label">E-Posta</div>
+                                    <div class="col-lg-9 col-md-8">@entity_kullanicilar.Eposta</div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade profil-duzenle pt-3" id="profil-duzenle">
+
+                                <form method="post" action="/Admin/BilgiGuncelle">
+                                    <input type="hidden" name="KullaniciId" value="@entity_kullanicilar.KullaniciId" />
+
+                                    <div class="row mb-3">
+                                        <label for="profilResmiUrl" class="col-md-4 col-lg-3 col-form-label">Profil
+                                            Fotoğrafı URL</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="ProfilFotoUrl" type="text" class="form-control"
+                                                id="profilResmiUrl" value="@entity_kullanicilar.ProfilFotoUrl"
+                                                placeholder="Profil fotoğrafı URL'sini girin">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="ad" class="col-md-4 col-lg-3 col-form-label">Ad</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Ad" type="text" class="form-control" id="ad"
+                                                value="@entity_kullanicilar.Ad" placeholder="Adınızı girin">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="soyad" class="col-md-4 col-lg-3 col-form-label">Soyad</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Soyad" type="text" class="form-control" id="soyad"
+                                                value="@entity_kullanicilar.Soyad" placeholder="Soyadınızı girin">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="telefon" class="col-md-4 col-lg-3 col-form-label">Telefon</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Telefon" type="text" class="form-control" id="telefon"
+                                                value="@entity_kullanicilar.Telefon">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="eposta" class="col-md-4 col-lg-3 col-form-label">E-Posta</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Eposta" type="email" class="form-control" id="eposta"
+                                                value="@entity_kullanicilar.Eposta">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="adres" class="col-md-4 col-lg-3 col-form-label">Adres</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Adres" type="text" class="form-control" id="adres"
+                                                value="@entity_kullanicilar.Adres">
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-3">
+                                        <label for="ulke" class="col-md-4 col-lg-3 col-form-label">Ülke</label>
+                                        <div class="col-md-8 col-lg-9">
+                                            <input name="Ulke" type="text" class="form-control" id="ulke"
+                                                value="@entity_kullanicilar.Ulke">
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary">Değişiklikleri Kaydet</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-                <div class="col-xl-8">
-
-                    <div class="card">
-                        <div class="card-body pt-3">
-                            <!-- Bordered Tabs -->
-                            <ul class="nav nav-tabs nav-tabs-bordered">
-                                <li class="nav-item">
-                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profil-ozeti">Özet</button>
-                                </li>
-                                <li class="nav-item">
-                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profil-duzenle">Profil Düzenle</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content pt-2">
-
-                                <div class="tab-pane fade show active profil-ozeti" id="profil-ozeti">
-                                    <h5 class="card-title">Profil Bilgileri</h5>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Ad - Soyad</div>
-                                        <div class="col-lg-9 col-md-8">@entity_kullanicilar.Ad <span>@entity_kullanicilar.Soyad</span></div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Ülke</div>
-                                        <div class="col-lg-9 col-md-8">@entity_kullanicilar.Ulke</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Adres</div>
-                                        <div class="col-lg-9 col-md-8">@entity_kullanicilar.Adres</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">Telefon</div>
-                                        <div class="col-lg-9 col-md-8">@entity_kullanicilar.Telefon</div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-4 label">E-Posta</div>
-                                        <div class="col-lg-9 col-md-8">@entity_kullanicilar.Eposta</div>
-                                    </div>
-
-                                </div>
-
-                                <div class="tab-pane fade profil-duzenle pt-3" id="profil-duzenle">
-
-                            <form method="post" action="/Admin/BilgiGuncelle">
-    <input type="hidden" name="KullaniciId" value="@entity_kullanicilar.KullaniciId" />
-
-    <!-- Profil Fotoğrafı URL -->
-    <div class="row mb-3">
-        <label for="profilResmiUrl" class="col-md-4 col-lg-3 col-form-label">Profil Fotoğrafı URL</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="ProfilFotoUrl" type="text" class="form-control" id="profilResmiUrl" value="@entity_kullanicilar.ProfilFotoUrl" placeholder="Profil fotoğrafı URL'sini girin">
-        </div>
-    </div>
-
-    <!-- Ad -->
-    <div class="row mb-3">
-        <label for="ad" class="col-md-4 col-lg-3 col-form-label">Ad</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Ad" type="text" class="form-control" id="ad" value="@entity_kullanicilar.Ad" placeholder="Adınızı girin">
-        </div>
-    </div>
-
-    <!-- Soyad -->
-    <div class="row mb-3">
-        <label for="soyad" class="col-md-4 col-lg-3 col-form-label">Soyad</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Soyad" type="text" class="form-control" id="soyad" value="@entity_kullanicilar.Soyad" placeholder="Soyadınızı girin">
-        </div>
-    </div>
-
-    <!-- Telefon -->
-    <div class="row mb-3">
-        <label for="telefon" class="col-md-4 col-lg-3 col-form-label">Telefon</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Telefon" type="text" class="form-control" id="telefon" value="@entity_kullanicilar.Telefon">
-        </div>
-    </div>
-
-    <!-- E-Posta -->
-    <div class="row mb-3">
-        <label for="eposta" class="col-md-4 col-lg-3 col-form-label">E-Posta</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Eposta" type="email" class="form-control" id="eposta" value="@entity_kullanicilar.Eposta">
-        </div>
-    </div>
-
-    <!-- Adres -->
-    <div class="row mb-3">
-        <label for="adres" class="col-md-4 col-lg-3 col-form-label">Adres</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Adres" type="text" class="form-control" id="adres" value="@entity_kullanicilar.Adres">
-        </div>
-    </div>
-
-    <!-- Ülke -->
-    <div class="row mb-3">
-        <label for="ulke" class="col-md-4 col-lg-3 col-form-label">Ülke</label>
-        <div class="col-md-8 col-lg-9">
-            <input name="Ulke" type="text" class="form-control" id="ulke" value="@entity_kullanicilar.Ulke">
-        </div>
-    </div>
-
-    <div class="text-center">
-        <button type="submit" class="btn btn-primary">Değişiklikleri Kaydet</button>
-    </div>
-</form>
-
-                                </div>
-                            </div><!-- End Bordered Tabs -->
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
-
-    </main><!-- End #main -->
+        </div>
+    </section>
+</main>
 }

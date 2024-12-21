@@ -278,7 +278,7 @@
 </head>
 
 <div class="container">
-  <!-- Çalışan Profili -->
+
   <section class="profile-card">
     <h2>Portföy</h2>
     <img src="/assets/img/Adsiztasarimmmm.png" class="profile-image">
@@ -286,7 +286,7 @@
     <p><strong>E-posta:</strong> lolee@gmail.com</p>
   </section>
 
-  <!-- Sipariş Kartı ve Profil Düzenleme Formu -->
+
   <section class="order-card" id="order-details">
     <div class="cizgi">
       <div><a href="#" id="order-details-link">Sipariş Detayları</a></div>
@@ -294,7 +294,6 @@
             alt=""></button></a>
     </div>
 
-    <!-- Sipariş 1 -->
     @if (Model.list_cstOnaylananSiparisler != null && Model.list_cstOnaylananSiparisler.Any())
     {
       @foreach (var siparisYonet in Model.list_cstOnaylananSiparisler)
@@ -327,9 +326,7 @@
             </div>
           </div>
         </div>
-
         <div class="order-item">
-
           <div class="toplam" id="toplam">
             <div class="toplamText toplamText1">
               <p><strong>Toplam Fiyat:</strong>250</p>
@@ -338,13 +335,12 @@
               <p><strong>Toplam Sipariş Sayısı:</strong>10</p>
             </div>
           </div>
-
         </div>
       }
-    }<!-- Profil Düzenleme Formu -->
-
+    }
   </section>
 </div>
+
 
 
 

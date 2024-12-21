@@ -126,12 +126,10 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
   <div class="container position-relative d-flex align-items-center justify-content-between">
 
-    <!-- Logo -->
     <a href="/Home/Index" class="logo d-flex align-items-center me-auto me-xl-0">
       <h1 class="sitename">Lolee</h1>
     </a>
 
-    <!-- Arama Çubuğu -->
     <form class="search-bar d-flex align-items-center ms-3" action="/Search" method="GET">
       <input type="text" name="query" placeholder="Ara..." class="search-input">
       <button type="submit" class="search-button">
@@ -139,7 +137,6 @@
       </button>
     </form>
 
-    <!-- Menü ve Profil -->
     <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="/Home/Index" class="active">Anasayfa</a></li>
@@ -155,7 +152,6 @@
       </ul>
     </nav>
 
-    <!-- Giriş Yap ve Profil -->
     <div class="auth-section d-flex align-items-center">
       @if (strGirisGoster == "1")
       {
