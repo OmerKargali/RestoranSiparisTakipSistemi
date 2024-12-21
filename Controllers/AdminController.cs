@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -28,26 +29,77 @@ public class AdminController : Controller
 
     public IActionResult AdminProfil()
     {
-        return View();
+        ViewData["Layout"] = "_AdminLayout";
+
+        var claim = HttpContext.User;
+        string? strKullaniciId = claim.FindFirstValue("KullaniciId");
+        int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+        Kullanicilar? entity = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
+        VMKullanicilar model = new VMKullanicilar();
+        model.KullaniciId = entity?.KullaniciId ?? 0;
+        model.entity_Kullanicilar = entity;
+
+        return View(model);
+    }
+    public IActionResult BilgiGuncelle(Kullanicilar k)
+    {
+        ViewData["Layout"] = "_AdminLayout";
+
+        Kullanicilar? kullanici = _context.Kullanicilar.Find(k.KullaniciId);
+        if (!string.IsNullOrWhiteSpace(k.Ad))
+        {
+            kullanici.Ad = k.Ad;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.Soyad))
+        {
+            kullanici.Soyad = k.Soyad;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.Eposta))
+        {
+            kullanici.Eposta = k.Eposta;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.Telefon))
+        {
+            kullanici.Telefon = k.Telefon;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.Adres))
+        {
+            kullanici.Adres = k.Adres;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.Ulke))
+        {
+            kullanici.Ulke = k.Ulke;
+        }
+
+        if (!string.IsNullOrWhiteSpace(k.ProfilFotoUrl))
+        {
+            kullanici.ProfilFotoUrl = k.ProfilFotoUrl;
+        }
+
+        _context.SaveChanges();
+
+        return RedirectToAction("Admin/AdminProfil");
     }
 
-    public IActionResult GenelTablolar()
-    {
-        return View();
-    }
-    public IActionResult VeriTablolari()
-    {
-        return View();
-    }
+
 
     public IActionResult UrunEkleme()
     {
+        ViewData["Layout"] = "_AdminLayout";
+
         return View();
     }
 
     [HttpPost]
     public async Task<IActionResult> UrunEkleme(VMUrunler modelUrunler)
     {
+        ViewData["Layout"] = "_AdminLayout";
+
         Urunler? DbUrunler = new Urunler();
         if (modelUrunler.UrunId != null)
         {
