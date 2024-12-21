@@ -29,65 +29,54 @@ public class AdminController : Controller
     }
 
 
-    public IActionResult AdminProfil()
+public IActionResult AdminProfil()
+{
+    ViewData["Layout"] = "_AdminLayout";
+
+    var claim = HttpContext.User;
+    string? strKullaniciId = claim.FindFirstValue("KullaniciId");
+    int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
+
+    var entity = _context.Kullanicilar.FirstOrDefault(x => x.KullaniciId == intKullaniciId);
+
+    if (entity == null)
     {
-        ViewData["Layout"] = "_AdminLayout";
-
-        var claim = HttpContext.User;
-        string? strKullaniciId = claim.FindFirstValue("KullaniciId");
-        int intKullaniciId = (strKullaniciId == null ? 0 : Convert.ToInt32(strKullaniciId));
-        Kullanicilar? entity = _context.Kullanicilar.Where(x => x.KullaniciId == intKullaniciId).FirstOrDefault();
-        VMKullanicilar model = new VMKullanicilar();
-        model.KullaniciId = entity?.KullaniciId ?? 0;
-        model.entity_Kullanicilar = entity;
-
-        return View(model);
-    }
-    public IActionResult BilgiGuncelle(Kullanicilar k)
-    {
-        ViewData["Layout"] = "_AdminLayout";
-
-        Kullanicilar? kullanici = _context.Kullanicilar.Find(k.KullaniciId);
-        if (!string.IsNullOrWhiteSpace(k.Ad))
-        {
-            kullanici.Ad = k.Ad;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.Soyad))
-        {
-            kullanici.Soyad = k.Soyad;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.Eposta))
-        {
-            kullanici.Eposta = k.Eposta;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.Telefon))
-        {
-            kullanici.Telefon = k.Telefon;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.Adres))
-        {
-            kullanici.Adres = k.Adres;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.Ulke))
-        {
-            kullanici.Ulke = k.Ulke;
-        }
-
-        if (!string.IsNullOrWhiteSpace(k.ProfilFotoUrl))
-        {
-            kullanici.ProfilFotoUrl = k.ProfilFotoUrl;
-        }
-
-        _context.SaveChanges();
-
-        return RedirectToAction("Admin/AdminProfil");
+        // Kullanıcı bulunamazsa bir hata mesajı veya yönlendirme yapabilirsiniz
+        return RedirectToAction("ErrorPage");
     }
 
+    VMKullanicilar model = new VMKullanicilar
+    {
+        KullaniciId = entity.KullaniciId,
+        entity_Kullanicilar = entity
+    };
+
+    return View(model);
+}
+[HttpPost]
+public IActionResult BilgiGuncelle(Kullanicilar k)
+{
+    // Kullanıcıyı buluyoruz
+    Kullanicilar? kullanici = _context.Kullanicilar.Find(k.KullaniciId);
+
+    if (kullanici == null)
+    {
+        return RedirectToAction("AdminProfil");
+    }
+
+    // Güncelleme işlemleri
+    if (!string.IsNullOrWhiteSpace(k.Ad)) kullanici.Ad = k.Ad;
+    if (!string.IsNullOrWhiteSpace(k.Soyad)) kullanici.Soyad = k.Soyad;
+    if (!string.IsNullOrWhiteSpace(k.Telefon)) kullanici.Telefon = k.Telefon;
+    if (!string.IsNullOrWhiteSpace(k.Eposta)) kullanici.Eposta = k.Eposta;
+    if (!string.IsNullOrWhiteSpace(k.Adres)) kullanici.Adres = k.Adres;
+    if (!string.IsNullOrWhiteSpace(k.Ulke)) kullanici.Ulke = k.Ulke;
+    if (!string.IsNullOrWhiteSpace(k.ProfilFotoUrl)) kullanici.ProfilFotoUrl = k.ProfilFotoUrl;
+
+    _context.SaveChanges();
+
+    return RedirectToAction("AdminProfil");
+}
 
 
     public IActionResult UrunEkleme()
